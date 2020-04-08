@@ -1,0 +1,46 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd"
+	>
+		
+		<!-- 后置处理器 -->
+	<!-- 	<bean class="xml.cn.com.MyBeanPostProcessor"/>
+		<bean id="dog" class="xml.cn.com.Dog" init-method="contomInit" destroy-method="contomDestroy"/>
+		<bean id="cat" class="xml.cn.com.Cat"></bean>
+		<bean id="blue" class="xml.cn.com.Blue"></bean> -->
+		
+		
+		<!-- 构造器注入bean值 -->
+		<bean id="house1" class="xml.cn.com.House">
+			<constructor-arg name="id"  value="1010"/>
+			<constructor-arg name="name" value="nameVal1-1010"/>
+		</bean>
+		
+	<!-- 	<bean id="jndiObjectFactoryBean" class="org.springframework.jndi.JndiObjectFactoryBean">
+			<property name="jndiName" >
+				<value> java:comp/env/jdbc/ssm</value>
+			</property>
+		</bean> -->
+		
+		
+		<bean id="house" class="xml.cn.com.House"/>
+		<bean  class="xml.cn.com.FamilyHouse" >
+			<property name="id" value="1"></property>
+			<property name="name" value="家里的房子"></property>
+			<property name="house" ref="house1"></property>
+		</bean>
+		
+		<bean  class="xml.cn.com.FamilyHouse" >
+			<property name="id" value="1"></property>
+			<property name="name" value="家里的房子"></property>
+			<property name="house" ref="house1"></property>
+		</bean>
+		
+		
+		<!-- setter注入bean值 -->
+		 <bean id="bigHouse" class="xml.cn.com.BigHouse">
+			<property name="id" value="200"></property>
+			<property name="name" value="setter注入值，通过setXXX()方法执行的，这是核心"></property>
+		</bean>
+		
+</beans>

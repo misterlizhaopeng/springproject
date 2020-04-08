@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+
+	<bean id="xmlBean01" class="cc.nn.gg.XmlBean01">
+	</bean>
+	
+	<bean id="xmlBean03" class="cc.nn.gg.XmlBean01">
+	</bean>
+
+
+	
+	
+	<!-- <beans profile="test">
+		<bean>..beans..</bean>
+	</beans>
+	
+	<beans profile="dev">
+		<bean>..beans..</bean>
+	</beans> -->
+	
+	
+</beans>
