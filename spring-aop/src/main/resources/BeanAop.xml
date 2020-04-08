@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+       https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--开启自动代理：生成代理对象，然后在实现aop-->
+    <aop:aspectj-autoproxy/>
+
+    <!--常用bean-->
+    <bean id="animal" class="aopxml.Ins.AnimalImpl"/>
+    <!--切面bean-->
+    <bean id="aspect01" class="aopxml.aspect.Aspect01"/>
+    <!--要引入的bean-->
+    <bean id="verifierAnimal" class="aopxml.Ins.VerifierAnimalImpl"/>
+
+    <!--给切面的每个通知设置切点-->
+    <!-- <aop:config>
+         <aop:aspect ref="aspect01">
+             <aop:before method="before" pointcut="execution(* aopxml.Ins.AnimalImpl.*(..))"/>
+             <aop:after method="after" pointcut="execution(* aopxml.Ins.AnimalImpl.*(..))"/>
+             <aop:after-throwing method="AfterThrowing" pointcut="execution(* aopxml.Ins.AnimalImpl.*(..))"/>
+             <aop:after-returning method="AfterReturning" pointcut="execution(* aopxml.Ins.AnimalImpl.*(..))"/>
+         </aop:aspect>
+     </aop:config>-->
+
+    <!--给切面的每个通知设置一个切点-->
+    <aop:config>
+        <aop:aspect ref="aspect01">
+            <!--引入：增强指定的bean；types-matching:被增强的类；增强接口：implement-interface；增强借口实现：default-impl-->
+            <aop:declare-parents types-matching="aopxml.Ins.AnimalImpl+"
+                                 implement-interface="aopxml.Ins.VerifierAnimal"
+                                 default-impl="aopxml.Ins.VerifierAnimalImpl"/>
+
+            <!--给类AnimalImpl下面的所有的方法添加“拦截”，执行下面的所有的“拦截器”的的通知方法-->
+            <aop:pointcut id="pointCu" expression="execution(* aopxml.Ins.AnimalImpl.*(..))"/>
+            <!--<aop:before method="before" pointcut-ref="pointCu"/>-->
+            <!--给通知传递参数;-->
+            <!--注意：如果存在多个参数，arg-names的值和后面的args里面值必须一致，和连接点（或者说被切的方法）的方法参数名称可以不一致，只需保证一一对应即可;
+                    ck:https://www.cnblogs.com/dand/p/10283247.html
+            -->
+            <aop:before method="before01" arg-names="aa,b"
+                        pointcut="execution(* aopxml.Ins.AnimalImpl.passPamaTest(..))
+                        and args(aa,b)"/>
+            <aop:after method="after" pointcut-ref="pointCu"/>
+            <aop:after-returning method="AfterReturning" pointcut-ref="pointCu"/>
+            <aop:after-throwing method="AfterThrowing" pointcut-ref="pointCu"/>
+        </aop:aspect>
+    </aop:config>
+</beans>
