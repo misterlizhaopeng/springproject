@@ -11,5 +11,6 @@
     <modules>
         <module>spring-aop</module>
         <module>spring-ioc</module>
+        <module>mybatis-spring</module>
     </modules>
 </project>

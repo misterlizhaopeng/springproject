@@ -1,0 +1,96 @@
+《spring 数据库编程“生命周期”》
+
+
+spring db
+    1.为了简化传统的jdbc访问数据库，spring 提供了JdbcTemplate和支持事务模板 TransactionTemplate，但是不常用,工作中更多的是一些orm框架，比如hibernate 、mybatis；
+    2.spring 不是替代原来的框架，而是以模板的形式支持，对于hibernate提供了 HibernateTemplate 模板，但是由于版本的原因，spring没有对mybatis提供模板，而是mybatis社区自己出了一套 开发包（mybatis-spring）
+    该包也提供了SqlSessionTemplate对象数据库操作，但是更有意思的是该包也提供了屏蔽SqlSessionTemplate，让开发者进行面向接口编程（就是后面的mapper接口）；
+    3.jdbc访问数据库的优点：性能好；缺点：大量的try-catch-finally，编码风格让人难以接受;
+
+spring中数据源dataSource的介绍
+    4.在spring中配置数据源很简单，一般可以通过spring内部提供的类或者第三方的连接池配置数据源；
+        4.1. spring内部提供的类配置数据源：SimpleDriverDataSource ，它不是一个数据库连接池，只是一个很简单的数据库连接的应用，见文件：datasourceBySpringCls.xml
+        4.2. 使用第三方的数据源，比如DHCP、C3p0、druid
+        4.3. 使用JNDI数据库连接池
+
+JdbcTemplate的介绍
+    5.JdbcTemplate 在spring框架中来说，解决了jdbc代码凌乱的现状，其实其本身也不是很完美；但无论如何，也体现了spring的设计的主导思想之一：
+        模板化编程，减少开发者的工作量；jdbcTemplate配置见文件：datasourceBySpringCls.xml
+        配置好了，就可以通过jdbctemplate对数据库进行操作了,见类：springdb.TestJdbcTemplate;
+    6.JdbcTemplate 还不能支持事务，需要引入对应的事物管理器才支持事务；
+
+mybatis-spring 项目理解
+    7. 使用mybatis-spring项目包操作数据库，可以更好的是业务层和模型层分离，与此同时，spring使用mybatis更简单，节省了不少代码，甚至不用操作
+        sqlSessionFactory、SqlSession对象进行数据库的操作，因为项目mybatis-spring为开发者封装了它们；
+    8.  只是mybatis-spring不是spring的子项目，因为spring 3发版时，mybatis 3还没有发版，所以spring只对mybatis的旧版ibatis支持；
+    9.  mybatis社区开发了mybatis-spring，可以通过如下gav坐标获取到：
+                    <!--mybatis-spring -->
+                    <dependency>
+                        <groupId>org.mybatis</groupId>
+                        <artifactId>mybatis-spring</artifactId>
+                        <version>1.3.2</version>
+                    </dependency>
+    10.配置mybatis-spring的步骤：
+        10.1 配置数据源
+        10.2 配置SqlSessionFactory  （可以选择性的 配置SqlSessionTemplate，在同事配置的情况下，优先选择SqlSessionTemplate）
+        10.3 配置Mapper  可以配置单个Mapper，也可以通过扫描的方式生成Mapper；此时spring ioc会生成对应接口，这样就可以通过注入的方式获取资源了；
+        10.4 事务管理
+    11.配置SqlSessionFactoryBean
+        了解mybatis的都知道，创建sqlsession，需要SqlSessionFactory，但是在项目mybatis-spring中提供了 SqlSessionFactoryBean 来创建SqlSession；
+        配置如下：
+                        <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+                            <property name="dataSource" ref="dataSource"/>
+                            <property name="configLocation" value="classpath:mybatis-config.xml"/>
+                        </bean>
+    12.在如何实现一个接口调用sql之前，了解一下 SqlSessionTemplate，见测试代码：testSqlSessionTemplate;
+        注意：SqlSessionTemplate并不是必须的组件，
+        这里介绍一下 优点：线程安全的类（没执行SqlSessionTemplate方法就会生成一个新的SQLSession），底层是ThreadLocal实现的；
+        缺点：查询执行需要按照 字符串 的方式进行操作对一个查询方法，不灵活，目前运用的不多了；
+
+    13.MapperFactoryBean
+        我们知道，mybatis的sql具体操作是一个代理对象，我们只需要拿到一个表对应的mapper接口即可，如何拿到这样的Mapper接口，并且不用 SqlSessionTemplate 方式呢 ？此时我们就用到了
+        MapperFactoryBean，其作为一个中介来实现Mapper接口数据库的编程，见测试文件testMapperFactoryBean 和容器的的配置文件：sqlSessionFactoryBean-MapperFactoryBean-03.xml，
+        但是，其缺点是配置比较复杂，比如配置两个接口，需要配置两次，如果配置多个接口，就需要配置多次，配置很麻烦，为了解决这个问题，对象MapperScannerConfigurer提供了更高级的支持，如下所示
+            <!-- MapperFactoryBean-mapper-IStudentMapper -->
+            <bean id="mapperFactoryBean" class="org.mybatis.spring.mapper.MapperFactoryBean">
+                <property name="mapperInterface" value="dao.IStudentMapper"></property>
+                <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+            </bean>
+            <!-- MapperFactoryBean-mapper-IEmployeeMapper -->
+            <bean id="mapperFactoryBean1" class="org.mybatis.spring.mapper.MapperFactoryBean">
+                <property name="mapperInterface" value="dao.IEmployeeMapper"></property>
+                <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+            </bean>
+
+    14.MapperScannerConfigurer
+        为了直接通过mapper接口对数据库表的操作，又避免了 MapperFactoryBean复 杂的配置，mybatis-spring组件的对象 MapperScannerConfigurer 提供了更高级的支持，
+        扫描接口的形式：
+
+            <!--MapperScannerConfigurer-->
+            <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+                <!--按指定包下进行扫描，会逐层深入扫描，对于多个包的扫描，可以用半角分开-->
+                <property name="basePackage" value="dao01"></property>
+                <!--指定标注Repository才被扫描为mapper-->
+                <property name="annotationClass" value="org.springframework.stereotype.Repository"></property>
+                <!--sqlSessionFactoryBeanName代表SqlSessionFactory，如果 sqlSessionTemplateBeanName 存在，sqlSessionFactoryBeanName 无效；-->
+                <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+
+            </bean>
+
+         也可以通过 markerInterface标记扩展接口代替 annotationClass属性，让所有的mapper接口继承markerInterface标记的接口，同样可以实现mapper接口编程，如下所示：
+
+            <!-- MapperScannerConfigurer - markerInterface -->
+            <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+                <!--按指定包下进行扫描，会逐层深入扫描，对于多个包的扫描，可以用半角分开-->
+                <property name="basePackage" value="dao01"></property>
+                <!--指定标注才被扫描为mapper-->
+                <!--<property name="annotationClass" value="org.springframework.stereotype.Repository"></property>-->
+                <property name="markerInterface" value="inter.ExtBaseInter"></property>
+                <!--sqlSessionFactoryBeanName代表SqlSessionFactory，如果 sqlSessionTemplateBeanName 存在，sqlSessionFactoryBeanName 无效；-->
+                <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+            </bean>
+
+
+
+
+

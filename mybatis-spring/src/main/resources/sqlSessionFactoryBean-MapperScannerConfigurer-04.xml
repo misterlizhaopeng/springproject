@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <context:property-placeholder location="classpath:db.properties"/>
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="jdbcUrl" value="${jdbc.url}"></property>
+        <property name="driverClass" value="${jdbc.driver}"></property>
+        <property name="user" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.psw}"></property>
+    </bean>
+
+    <!--配置sqlSessionFactory-->
+    <bean  id="ss" class="org.mybatis.spring.SqlSessionFactoryBean" >
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="configLocation" value="classpath:mybatis-config01.xml"></property>
+        <!--<property name="mapperLocations" value="classpath:mapper/*.xml"></property>-->
+    </bean>
+
+    <!--MapperScannerConfigurer-->
+<!--
+    <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        &lt;!&ndash;按指定包下进行扫描，会逐层深入扫描，对于多个包的扫描，可以用半角分开&ndash;&gt;
+        <property name="basePackage" value="dao01"></property>
+        &lt;!&ndash;指定标注才被扫描为mapper&ndash;&gt;
+        <property name="annotationClass" value="org.springframework.stereotype.Repository"></property>
+        &lt;!&ndash;sqlSessionFactoryBeanName代表SqlSessionFactory，如果 sqlSessionTemplateBeanName 存在，sqlSessionFactoryBeanName 无效；&ndash;&gt;
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+    </bean>
+-->
+    <!-- MapperScannerConfigurer - markerInterface -->
+    <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--按指定包下进行扫描，会逐层深入扫描，对于多个包的扫描，可以用半角分开-->
+        <property name="basePackage" value="dao01"></property>
+        <!--指定标注才被扫描为mapper-->
+        <!--<property name="annotationClass" value="org.springframework.stereotype.Repository"></property>-->
+        <property name="markerInterface" value="inter.ExtBaseInter"></property>
+        <!--sqlSessionFactoryBeanName代表SqlSessionFactory，如果 sqlSessionTemplateBeanName 存在，sqlSessionFactoryBeanName 无效；-->
+        <property name="sqlSessionFactoryBeanName" value="ss"></property>
+    </bean>
+</beans>
