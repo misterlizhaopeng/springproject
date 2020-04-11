@@ -1,6 +1,13 @@
 《spring 数据库编程“生命周期”》
 
 
+本节主要关注点：
+    1.了解传统jdbc的弊端
+    2.了解如何配置spring的数据源
+    3.了解jdbctemplate的基本用法
+    4.掌握mybatis-spring的项目整合步骤
+
+
 spring db
     1.为了简化传统的jdbc访问数据库，spring 提供了JdbcTemplate和支持事务模板 TransactionTemplate，但是不常用,工作中更多的是一些orm框架，比如hibernate 、mybatis；
     2.spring 不是替代原来的框架，而是以模板的形式支持，对于hibernate提供了 HibernateTemplate 模板，但是由于版本的原因，spring没有对mybatis提供模板，而是mybatis社区自己出了一套 开发包（mybatis-spring）
@@ -34,8 +41,10 @@ mybatis-spring 项目理解
         10.1 配置数据源
         10.2 配置SqlSessionFactory  （可以选择性的 配置SqlSessionTemplate，在同事配置的情况下，优先选择SqlSessionTemplate）
         10.3 配置Mapper  可以配置单个Mapper，也可以通过扫描的方式生成Mapper；此时spring ioc会生成对应接口，这样就可以通过注入的方式获取资源了；
-        10.4 事务管理
-    11.配置SqlSessionFactoryBean
+        10.4 事务管理 【见项目：spring-tx】
+
+    11.配置 SqlSessionFactoryBean
+        配置sqlSessionFactory,集成MyBatis；
         了解mybatis的都知道，创建sqlsession，需要SqlSessionFactory，但是在项目mybatis-spring中提供了 SqlSessionFactoryBean 来创建SqlSession；
         配置如下：
                         <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
