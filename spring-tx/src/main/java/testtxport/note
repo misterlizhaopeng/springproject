@@ -1,4 +1,71 @@
 spring 事务机制；
 
 
-1.
+1.事务管理器接口 PlatformTransactionManager
+    1.1.有了事物管理器，数据库资源的打开、关闭和事务的管理就不用开发人员关注了，开发人员只需要关注开发业务即可，这就是spring事物管理器的好处；
+    1.2.spring事务的提交、回滚、获取是通过 PlatformTransactionManager 接口完成的;
+    1.3.三个接口的关系：
+        DataSourceTransactionManager extends AbstractPlatformTransactionManager；
+        AbstractPlatformTransactionManager implements PlatformTransactionManager；
+    1.4.
+2.事务的类别：
+    2.1 编程式事务（已经不常用了）；
+    2.2 声明式事务 （又分为 xml配置和注解事务）；
+3.编程式事务
+
+    对于JdbcTemplate 对象来说，如果数据库连接资源没有委托给事务管理器，那么就由jdbctemplate管理，
+    否则由 transactionManager 对数据库资源打开、关闭和事务进行管理；
+    见测试代码：testtxport.TESTJdbcTemplateTx
+
+4.声明式事务
+    4.1 理解声明式事务
+        事务定义器类TransactionDefinition、事务声明器@transactional 的关系：
+        在@transactional中[声明的属性]将会被spring放到 TransactionDefinition中，这里理解声明式事务；
+
+    4.2 xml配置式声明式事务，分两步：
+        a.  bean:TransactionInterceptor
+        b.  bean:BeanNameAutoProxyCreator
+            详见配置文件：xmlAnnotationTxApplicationCtx.xml
+        或者，如下图所示的配置：
+            testtxport.Image.png
+        理解：配置一个切面，切面下面指定具体的被切到的方法，这些被切到的方法通过事务声明属性，进行事物的行为；
+        理解此处的切点aop:pointcut：<!-- 标注的被切点，织入声明式事务的流程中 -->
+
+    4.3 注解式声明式事务
+        详见配置文件：applicationctxMapperScannerConfigurer.xml
+        注意：开启注解配置事务：<tx:annotation-driven transaction-manager="transactionManager"/>，这样之后，
+        通过注解@transactional就可以配置事务了；
+        理解：注解方式是哪里标注@transactional，哪里存在事务；
+
+5.数据库的特性
+    5.1 ACID:
+        Atomicity;原子性；表示在一个事务中的多个执行的动作，要么全部成功，要么全部失败；
+        Consistency:一致性；表示事务始终保持系统处于一致性的状态；（就是:应用系统从一个正确的状态到另一个正确的状态.而ACID就是说事务能够通过AID来保证这个C的过程.C是目的,AID都是手段.）
+        Isolation;隔离性；表示不同事务之间互不干扰；
+        Durability;持久性；表示事务执行完毕之后，会持久的保存到数据库中，不会滚；
+
+        mysql支持四种隔离级别：
+        read-uncommited:此种事务隔离级别会产生脏数据
+        read-commited:不会产生脏数据，但会有不可重复读的效果
+        repeatable-read:解决了不可重复读的效果，但会有幻读的效果
+        serializable:解决了幻读的效果
+        如下图可以说明：
+            testtxport.Image2.png
+
+
+        在开发中，如何选择隔离级别：
+        1.一般情况下，选择read-committed级别：我们知道隔离级别越高，并发性能越差，一般在大部分场景下，数据库选择了read-committed，这样既有助于提高并发，又避免了读脏数据的情况，但此种情况会产生数据不一致的情况发生；
+        2.如果数据库对并发量要求不高甚至不要求，又要保证数据的安全性，可以选择serializable级别，在spring中的可以这样设置：@Transactional(isolation= Isolation.SERIALIZABLE)；
+        3.对于 @Transactional(isolation= Isolation.DEFAULT)  来说，意思是随着数据库的默认隔离级别而定；比如 mysql 的默认隔离级别为 repeatable-read，oracle的默认隔离级别为 read-committed，虽然oracle的隔离级别只有两种：read-committed、serializable；
+    5.2  传播属性
+        5.1 传播属性：
+
+        5.2 自调用失效的情况：
+            测试自调用失效问题；同一个类中事务标注的方法A调用一个事务标注的方法B，且方法B传播属性为Propagation.REQUIRES_NEW；但是方法B没有在新的事务中执行，这就是自调用失效的情况，因为这成了方法之间的调用了，没有通过获取Bean（方法所在的Bean）的形式调用，因为获取Bean对象返回的是一个代理的对象，解决方案，通过spring容器获取bean的代理对象；
+            3.典型的用法剖析
+            3.1 错误调用： 对一个事务方法多次调用，这样产生多个事务，而不会在一个事务中执行，比如在controller中执行多次调用事务方法；解决方法：不要这样调用，把业务转到事务方法中，比如@Service中的方法
+            3.2 占用事务时间过长的动作；比如在一个事务方法中有一个文件处理（比如上传文件），这样事务资源会被占用时间过久，并发量大的情况下，会造成系统卡顿；解决方法：把占用时间久的动作拿到事务外面；
+        5.3 在一个事务方法中，如果可能存在异常，再次进行try-catch的的情况下，catch没有任何动作，此时系统的异常会被吃掉，如果想被spring事务管理器管理事务，就要记得在catch中throw 出来，比如：throw new RuntimeException(ex);
+                个人经历：在一个事务中，可以对多个动作做判断！！
+
+

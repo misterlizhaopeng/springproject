@@ -2,20 +2,23 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        https://www.springframework.org/schema/context/spring-context.xsd
        http://www.springframework.org/schema/tx
-       http://www.springframework.org/schema/tx/spring-tx.xsd">
+       http://www.springframework.org/schema/tx/spring-tx.xsd http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd">
 
+
+    <!--启动扫描-->
+    <context:annotation-config />
 
    <!-- <bean id="studentService" class="service.StudentServiceImpl" ></bean>-->
     <!--扫描组件-->
     <context:component-scan base-package="service"></context:component-scan>
 
-    <!--开启注解事务-->
-    <tx:annotation-driven transaction-manager="transactionManager"/>
+
     <context:property-placeholder location="classpath:db.properties"></context:property-placeholder>
     <!--datasource:c3p0-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
@@ -24,6 +27,20 @@
         <property name="user" value="${jdbc.username}"></property>
         <property name="password" value="${jdbc.psw}"></property>
     </bean>
+
+    <!-- 数据库连接池 -->
+  <!--  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="root" />
+        <property name="password" value="root" />
+        <property name="maxActive" value="255" />
+        <property name="maxIdle" value="5" />
+        <property name="maxWait" value="10000" />
+    </bean>-->
+
+
+
     <!--SQLSessionFactory-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"></property>
@@ -36,10 +53,13 @@
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
         <property name="annotationClass" value="org.springframework.stereotype.Repository"></property>
     </bean>
-
+    <!--<mybatis-spring:scan base-package="dao"/>-->
 
     <!--事务管理器-->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"></property>
     </bean>
+
+    <!--开启注解事务-->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
 </beans>

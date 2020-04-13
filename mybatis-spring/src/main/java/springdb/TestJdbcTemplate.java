@@ -12,7 +12,7 @@ public class TestJdbcTemplate {
     public void testJdbcTemplte() {
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:datasourceBySpringCls-01.xml");
         JdbcTemplate jdbcTemplate = ctx.getBean(JdbcTemplate.class);
-        List<Map<String, Object>> list = jdbcTemplate.queryForList("select * from dept");
+        List<Map<String, Object>> list = jdbcTemplate.queryForList("select * from dept ");
         list.forEach(a -> {
             System.out.println(a);
         });

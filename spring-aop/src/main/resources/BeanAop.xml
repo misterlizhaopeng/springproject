@@ -36,7 +36,7 @@
                                  implement-interface="aopxml.Ins.VerifierAnimal"
                                  default-impl="aopxml.Ins.VerifierAnimalImpl"/>
 
-            <!--给类AnimalImpl下面的所有的方法添加“拦截”，执行下面的所有的“拦截器”的的通知方法-->
+            <!--给类AnimalImpl下面的所有的方法添加“拦截”，执行下面的所有的“拦截器”的通知方法-->
             <aop:pointcut id="pointCu" expression="execution(* aopxml.Ins.AnimalImpl.*(..))"/>
             <!--<aop:before method="before" pointcut-ref="pointCu"/>-->
             <!--给通知传递参数;-->

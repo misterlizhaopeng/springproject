@@ -20,8 +20,8 @@ spring中数据源dataSource的介绍
         4.2. 使用第三方的数据源，比如DHCP、C3p0、druid
         4.3. 使用JNDI数据库连接池
 
-JdbcTemplate的介绍
-    5.JdbcTemplate 在spring框架中来说，解决了jdbc代码凌乱的现状，其实其本身也不是很完美；但无论如何，也体现了spring的设计的主导思想之一：
+JdbcTemplate 的介绍
+    5.JdbcTemplate 在spring 框架中来说，解决了jdbc代码凌乱的现状，其实其本身也不是很完美；但无论如何，也体现了spring的设计的主导思想之一：
         模板化编程，减少开发者的工作量；jdbcTemplate配置见文件：datasourceBySpringCls.xml
         配置好了，就可以通过jdbctemplate对数据库进行操作了,见类：springdb.TestJdbcTemplate;
     6.JdbcTemplate 还不能支持事务，需要引入对应的事物管理器才支持事务；
@@ -99,6 +99,8 @@ mybatis-spring 项目理解
                 <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
             </bean>
 
+        另一种扫描mapper接口的方法，此时这些mapper接口可以[不用标注]注解@Repository，一样被spring容器装配为可操作的mapper接口：
+            <mybatis-spring:scan base-package="cn.l.dao" />
 
 
 

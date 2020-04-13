@@ -52,6 +52,24 @@
             <artifactId>c3p0</artifactId>
             <version>0.9.5.2</version>
         </dependency>
+
+
+        <!-- commons-dbcp -->
+        <dependency>
+            <groupId>commons-dbcp</groupId>
+            <artifactId>commons-dbcp</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+       <!-- <dependency>
+            <groupId>com.alibaba.external</groupId>
+            <artifactId>jakarta.commons.dbcp</artifactId>
+            <version>1.4</version>
+        </dependency>
+-->
+
+
+
         <!-- mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>
