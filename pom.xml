@@ -13,5 +13,6 @@
         <module>spring-ioc</module>
         <module>mybatis-spring</module>
         <module>spring-tx</module>
+        <module>spring-boot-rabbit</module>
     </modules>
 </project>

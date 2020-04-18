@@ -21,7 +21,11 @@
 				<value> java:comp/env/jdbc/ssm</value>
 			</property>
 		</bean> -->
-		
+
+
+		<!--监视容器完成之后的动作；2020年4月18日-->
+		<bean class="xml.cn.com.ApplicationStartListener"></bean>
+
 		
 		<bean id="house" class="xml.cn.com.House"/>
 		<bean  class="xml.cn.com.FamilyHouse" >
