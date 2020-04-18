@@ -20,7 +20,8 @@ public class MT {
 * */
     @Test
     public void testClassPathXmlApp() {
-        ClassPathXmlApplicationContext root = new ClassPathXmlApplicationContext("classpath:bean2.xml");
+        // 父容器测试 start
+//        ClassPathXmlApplicationContext root = new ClassPathXmlApplicationContext("classpath:bean2.xml");
 
 //        ConfigurableApplicationContext ccc=(ConfigurableApplicationContext)root;
 //        String[] sdfdfsa = ccc.getBeanDefinitionNames();
@@ -29,9 +30,24 @@ public class MT {
 //            System.out.println(a);
 //        });
 
+//        ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:bean.xml");
+//        ctx.setParent(root);
+//        ctx.refresh();
+
+
+        // 父容器测试 end
+
+
+
+
+        TestInitializingBean testInitializingBean =new TestInitializingBean();
+        System.out.println("------------------>112");
+
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:bean.xml");
-        ctx.setParent(root);
-        ctx.refresh();
+
+
+
+
 
 //        String[] ns = ctx.getBeanDefinitionNames();
 //        List<String> list = Arrays.asList(ns);

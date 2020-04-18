@@ -9,7 +9,8 @@
 		<bean id="cat" class="xml.cn.com.Cat"></bean>
 		<bean id="blue" class="xml.cn.com.Blue"></bean> -->
 		
-		
+
+		<bean id="testInitializingBeanSub" class="xml.cn.com.TestInitializingBeanSub" ></bean>
 		<!-- 构造器注入bean值 -->
 		<bean id="house1" class="xml.cn.com.House">
 			<constructor-arg name="id"  value="1010"/>
