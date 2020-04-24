@@ -40,7 +40,7 @@ public class MT {
 
 
 
-        TestInitializingBean testInitializingBean =new TestInitializingBean();
+        //TestInitializingBean testInitializingBean =new TestInitializingBean();
         System.out.println("------------------>112");
 
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:bean.xml");
