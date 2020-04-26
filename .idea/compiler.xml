@@ -9,7 +9,13 @@
         <module name="mybatisspring" />
         <module name="springaop" />
         <module name="springioc" />
+        <module name="springtx" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="designpattern" target="1.8" />
+      <module name="springbootrabbit" target="1.8" />
+      <module name="springthread" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

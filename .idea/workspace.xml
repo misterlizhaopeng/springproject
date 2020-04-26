@@ -2,43 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="763e6564-80d4-4ca9-a03a-9c2dc4c53fa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/java/bean/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/java/dao/IEmployeeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/java/dao/IStudentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/java/dao01/IEmployeeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/java/dao01/IStudentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/java/inter/ExtBaseInter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/TestJdbcTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/note" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/testMapperFactoryBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/testMapperScannerConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/testSqlSessionTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/resources/datasourceBySpringCls-01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/resources/mapper/EmployeeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/resources/mapper/Student.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/resources/mapper01/EmployeeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/resources/mapper01/Student.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/resources/mybatis-config01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/resources/sqlSessionFactoryBean-MapperFactoryBean-03.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/resources/sqlSessionFactoryBean-MapperScannerConfigurer-04.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-spring/src/main/resources/sqlSessionFactoryBean-SQLSessionTemplate-02.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-aop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-aop/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/MT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/Proxy_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObj.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObj2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObjImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObjImpl2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/MT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/Proxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/WasProxyObj.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/WasProxyObjImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/note" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/Component.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/ConcreteComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/MT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/note" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-thread/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/del/TestMyThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/note" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_01/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_01/MT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_01/RunnableIns.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_01/ThreadIns.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_02/BuyTicket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_02/MT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_02/Ticket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_single/EHParttern.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_single/LHPattern.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_single/MT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-thread/src/test/java/com/lp/AppTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/spring-aop/target/" />
     <ignored path="$PROJECT_DIR$/spring-ioc/target/" />
     <ignored path="$PROJECT_DIR$/mybatis-spring/target/" />
+    <ignored path="$PROJECT_DIR$/spring-tx/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-rabbit/target/" />
+    <ignored path="$PROJECT_DIR$/spring-thread/target/" />
+    <ignored path="$PROJECT_DIR$/design-pattern/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,59 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/testMapperScannerConfigurer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/sqlSessionFactoryBean-MapperScannerConfigurer-04.xml">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="42" column="79" lean-forward="true" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/dao01/IStudentMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/dao01/IEmployeeMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/testMapperFactoryBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="143">
+              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -111,8 +74,9 @@
       <list>
         <option value="Tag Library Descriptor" />
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -134,6 +98,15 @@
       <find>mysql</find>
       <find>Student.xml</find>
       <find>testMapperScannerConfigurer</find>
+      <find>CallbackPreferringPlatformTransactionManager</find>
+      <find>platformTransactionManager</find>
+      <find>stdout</find>
+      <find>log4j.appender.appender3.layout</find>
+      <find>mybatis-spring</find>
+      <find>getSingleton</find>
+      <find>构</find>
+      <find>FilterInputStream</find>
+      <find>decorator</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,52 +115,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-aop/src/main/java/aop/Ins/Animal.java" />
-        <option value="$PROJECT_DIR$/spring-ioc/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-ioc/src/main/java/annotation/c/d/e/Fg.java" />
-        <option value="$PROJECT_DIR$/spring-ioc/src/main/resources/bean2.xml" />
-        <option value="$PROJECT_DIR$/spring-ioc/src/main/java/xml/cn/com/MT.java" />
-        <option value="$PROJECT_DIR$/spring-aop/src/main/java/aop/aspect/Aspect01.java" />
-        <option value="$PROJECT_DIR$/spring-aop/src/main/java/aopxml/Ins/UserService.java" />
-        <option value="$PROJECT_DIR$/spring-aop/src/main/java/aopxml/aspect/BeanAop.xml" />
-        <option value="$PROJECT_DIR$/spring-aop/src/main/java/aopxml/Ins/MyParamt.java" />
-        <option value="$PROJECT_DIR$/spring-aop/src/main/java/aopxml/Ins/AnimalImpl.java" />
-        <option value="$PROJECT_DIR$/spring-aop/src/main/java/aopxml/Ins/Animal.java" />
-        <option value="$PROJECT_DIR$/spring-aop/src/main/java/aopxml/test/MT.java" />
-        <option value="$PROJECT_DIR$/spring-aop/src/main/resources/BeanAop.xml" />
-        <option value="$PROJECT_DIR$/spring-aop/src/main/java/aopxml/aspect/Aspect01.java" />
-        <option value="$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/mt.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/note" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/cls/ThreadIns.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/cls/MT.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thread/ThreadIns.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thddef/RunnableThread.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thddef/MT.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thddef/RunnableIns.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thddef/A.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thddef/ThreadIns.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thd_01/RunnableIns.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thd_02/Ticket.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thd_02/MT.java" />
+        <option value="$PROJECT_DIR$/spring-thread/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thd_02/BuyTicket.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thd_single/MT.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thd_single/LHPattern.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thd_single/EHParttern.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/del/DelCls.java" />
+        <option value="$PROJECT_DIR$/spring-thread/src/main/java/del/TestMyThread.java" />
+        <option value="$PROJECT_DIR$/design-pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/decorate/Component.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/decorate/ConcreteComponent.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/d2/IPerson.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/d2/Person.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/d2/MT.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/d2/personSay.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/d2/Decorator.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/d2/PersonRunning.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorAction.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/decorator/MT.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionA.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionB.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionC.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/decorator/note" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/proxy/_static/WasProxyObj.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/proxy/_static/WasProxyObjImpl.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/proxy/_static/Proxy.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/proxy/_static/MT.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/proxy/note" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/proxy/_dynamic/Component.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/proxy/_dynamic/WasProxyObj.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/proxy/_dynamic/WasProxyObjImpl.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/proxy/_dynamic/Proxy.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/Proxy.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObjImpl.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/Proxy_.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObj2.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObjImpl2.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/MT.java" />
+        <option value="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/note" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-aop/pom.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/db.properties" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/abc" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/datasourceBySpringCls.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/note" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/TestJdbcTemplate.java" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/sqlSessionFactoryBean.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/java/bean/Student.java" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/java/dao/IStudentMapper.java" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/mapper/Student.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/sqlSessionFactoryBean-02.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/pom.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/testSqlSessionTemplate.java" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/sqlSessionFactoryBean-SQLSessionTemplate-02.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/java/dao/IEmployeeMapper.java" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/testMapperFactoryBean.java" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/mapper/EmployeeMapper.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/sqlSessionFactoryBean-MapperFactoryBean-03.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/mapper01/EmployeeMapper.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/mapper01/Student.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/mybatis-config01.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/log4j.xml" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/java/inter/ExtBaseInter.java" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/java/dao01/IEmployeeMapper.java" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/note" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/java/dao01/IStudentMapper.java" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/testMapperScannerConfigurer.java" />
-        <option value="$PROJECT_DIR$/mybatis-spring/src/main/resources/sqlSessionFactoryBean-MapperScannerConfigurer-04.xml" />
       </list>
     </option>
   </component>
@@ -211,8 +189,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="92" />
-    <option name="y" value="132" />
+    <option name="x" value="265" />
+    <option name="y" value="87" />
     <option name="width" value="1024" />
     <option name="height" value="700" />
   </component>
@@ -221,6 +199,7 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -232,67 +211,6 @@
               <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="springproject" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springproject" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis-spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springproject" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springproject" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springproject" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springproject" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dao01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springproject" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="inter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springproject" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springdb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springproject" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -303,30 +221,36 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586505800035" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587881573166" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\hhhhhhhhhhhhhhhhhhhhhhhhhhhh\java\springproject\spring-tx\src\main\java\testtxport" />
       <recent name="F:\hhhhhhhhhhhhhhhhhhhhhhhhhhhh\java\springproject\mybatis-spring\src\main\java\springdb" />
       <recent name="F:\hhhhhhhhhhhhhhhhhhhhhhhhhhhh\java\springproject\mybatis-spring\src\main" />
       <recent name="F:\hhhhhhhhhhhhhhhhhhhhhhhhhhhh\java\springproject\spring-aop\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="_proxy._dynamic" />
+      <recent name="proxy._dynamic" />
+      <recent name="decorator" />
+      <recent name="bean" />
       <recent name="springdb" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\hhhhhhhhhhhhhhhhhhhhhhhhhhhh\java\springproject\mybatis-spring\src\main\resources" />
-      <recent name="F:\hhhhhhhhhhhhhhhhhhhhhhhhhhhh\java\springproject\mybatis-spring\src\main\java\dao01" />
-      <recent name="F:\hhhhhhhhhhhhhhhhhhhhhhhhhhhh\java\springproject\mybatis-spring\src\main\resources\mapper" />
-      <recent name="F:\hhhhhhhhhhhhhhhhhhhhhhhhhhhh\java\springproject\mybatis-spring\src\main\java\dao" />
-      <recent name="F:\hhhhhhhhhhhhhhhhhhhhhhhhhhhh\java\springproject\spring-aop\src\main\java\aopxml" />
+      <recent name="F:\hhhhhhhhhhhhhhhhhhhhhhhhhhhh\java\springproject\design-pattern\src\main\java\_proxy\_dynamic" />
+      <recent name="F:\hhhhhhhhhhhhhhhhhhhhhhhhhhhh\java\springproject\spring-boot-rabbit\src\test" />
+      <recent name="F:\hhhhhhhhhhhhhhhhhhhhhhhhhhhh\java\springproject\spring-tx\src\main\java\testtxport" />
+      <recent name="F:\hhhhhhhhhhhhhhhhhhhhhhhhhhhh\java\springproject\spring-tx\src\main\resources" />
+      <recent name="F:\hhhhhhhhhhhhhhhhhhhhhhhhhhhh\java\springproject\spring-tx\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -341,104 +265,108 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.testMapperScannerConfigurer.testMapperScannerConfigurer">
-    <configuration name="TestJdbcTemplate.testJdbcTemplte" type="JUnit" factoryName="JUnit" singleton="false" temporary="true" nameIsGenerated="true">
-      <module name="mybatisspring" />
+  <component name="RunManager" selected="Application.MT (1)">
+    <configuration name="MT (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_proxy._dynamic.MT" />
+      <module name="designpattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springdb.*" />
+          <option name="PATTERN" value="_proxy._dynamic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springdb" />
-      <option name="MAIN_CLASS_NAME" value="springdb.TestJdbcTemplate" />
-      <option name="METHOD_NAME" value="testJdbcTemplte" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testMapperFactoryBean.testMapperFactoryBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatisspring" />
+    <configuration name="MT (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="decorator.MT" />
+      <module name="designpattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springdb.*" />
+          <option name="PATTERN" value="decorator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springdb" />
-      <option name="MAIN_CLASS_NAME" value="springdb.testMapperFactoryBean" />
-      <option name="METHOD_NAME" value="testMapperFactoryBean" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testMapperScannerConfigurer.testMapperFactoryBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatisspring" />
+    <configuration name="MT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="d2.MT" />
+      <module name="designpattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springdb.*" />
+          <option name="PATTERN" value="d2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springdb" />
-      <option name="MAIN_CLASS_NAME" value="springdb.testMapperScannerConfigurer" />
-      <option name="METHOD_NAME" value="testMapperFactoryBean" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testMapperScannerConfigurer.testMapperScannerConfigurer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatisspring" />
+    <configuration name="MT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_proxy._static.MT" />
+      <module name="designpattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springdb.*" />
+          <option name="PATTERN" value="_proxy._static.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springdb" />
-      <option name="MAIN_CLASS_NAME" value="springdb.testMapperScannerConfigurer" />
-      <option name="METHOD_NAME" value="testMapperScannerConfigurer" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testSqlSessionTemplate.testSqlSessionTemp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatisspring" />
+    <configuration name="TestMyThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="del.TestMyThread" />
+      <module name="springthread" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="springdb.*" />
+          <option name="PATTERN" value="del.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="springdb" />
-      <option name="MAIN_CLASS_NAME" value="springdb.testSqlSessionTemplate" />
-      <option name="METHOD_NAME" value="testSqlSessionTemp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MT.ttttttttttt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.com.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.com.test.MT" />
+      <option name="METHOD_NAME" value="ttttttttttt" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestJdbcTemplate.testJdbcTemplte" />
-      <item itemvalue="JUnit.testSqlSessionTemplate.testSqlSessionTemp" />
-      <item itemvalue="JUnit.testMapperFactoryBean.testMapperFactoryBean" />
-      <item itemvalue="JUnit.testMapperScannerConfigurer.testMapperFactoryBean" />
-      <item itemvalue="JUnit.testMapperScannerConfigurer.testMapperScannerConfigurer" />
+      <item itemvalue="Application.TestMyThread" />
+      <item itemvalue="JUnit.MT.ttttttttttt" />
+      <item itemvalue="Application.MT (3)" />
+      <item itemvalue="Application.MT" />
+      <item itemvalue="Application.MT (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testMapperScannerConfigurer.testMapperScannerConfigurer" />
-        <item itemvalue="JUnit.testMapperScannerConfigurer.testMapperFactoryBean" />
-        <item itemvalue="JUnit.testMapperFactoryBean.testMapperFactoryBean" />
-        <item itemvalue="JUnit.testSqlSessionTemplate.testSqlSessionTemp" />
-        <item itemvalue="JUnit.TestJdbcTemplate.testJdbcTemplte" />
+        <item itemvalue="Application.MT (1)" />
+        <item itemvalue="Application.MT (1)" />
+        <item itemvalue="Application.MT (3)" />
+        <item itemvalue="Application.MT" />
+        <item itemvalue="JUnit.MT.ttttttttttt" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -452,50 +380,53 @@
       <updated>1586352100603</updated>
       <workItem from="1586352102078" duration="11926000" />
       <workItem from="1586366531080" duration="18445000" />
-      <workItem from="1586496425813" duration="9346000" />
+      <workItem from="1586496425813" duration="29214000" />
+      <workItem from="1586618272212" duration="33744000" />
+      <workItem from="1586842539004" duration="611000" />
+      <workItem from="1587139853501" duration="8830000" />
+      <workItem from="1587230368241" duration="34442000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testMapperScannerConfigurer_testMapperFactoryBean - 2020.04.10 at 15h 57m 17s.xml">
-      <configuration name="testMapperScannerConfigurer.testMapperFactoryBean" configurationId="JUnit" />
+    <history-entry file="MT_testClassPathXmlApp - 2020.04.18 at 02h 58m 33s.xml">
+      <configuration name="MT.testClassPathXmlApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testMapperScannerConfigurer_testMapperFactoryBean - 2020.04.10 at 15h 58m 02s.xml">
-      <configuration name="testMapperScannerConfigurer.testMapperFactoryBean" configurationId="JUnit" />
+    <history-entry file="MT_testClassPathXmlApp - 2020.04.18 at 02h 58m 47s.xml">
+      <configuration name="MT.testClassPathXmlApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testMapperScannerConfigurer_testMapperFactoryBean - 2020.04.10 at 15h 59m 03s.xml">
-      <configuration name="testMapperScannerConfigurer.testMapperFactoryBean" configurationId="JUnit" />
+    <history-entry file="House_te - 2020.04.18 at 16h 27m 58s.xml">
+      <configuration name="House.te" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testMapperScannerConfigurer_testMapperFactoryBean - 2020.04.10 at 15h 59m 24s.xml">
-      <configuration name="testMapperScannerConfigurer.testMapperFactoryBean" configurationId="JUnit" />
+    <history-entry file="House_te - 2020.04.18 at 16h 28m 12s.xml">
+      <configuration name="House.te" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testMapperScannerConfigurer_testMapperFactoryBean - 2020.04.10 at 16h 00m 02s.xml">
-      <configuration name="testMapperScannerConfigurer.testMapperFactoryBean" configurationId="JUnit" />
+    <history-entry file="MT_testClassPathXmlApp - 2020.04.19 at 01h 32m 18s.xml">
+      <configuration name="MT.testClassPathXmlApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testMapperScannerConfigurer_testMapperFactoryBean - 2020.04.10 at 16h 00m 19s.xml">
-      <configuration name="testMapperScannerConfigurer.testMapperFactoryBean" configurationId="JUnit" />
+    <history-entry file="MT_testClassPathXmlApp - 2020.04.19 at 01h 34m 36s.xml">
+      <configuration name="MT.testClassPathXmlApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testMapperScannerConfigurer_testMapperScannerConfigurer - 2020.04.10 at 16h 00m 55s.xml">
-      <configuration name="testMapperScannerConfigurer.testMapperScannerConfigurer" configurationId="JUnit" />
+    <history-entry file="MT_testClassPathXmlApp - 2020.04.19 at 01h 38m 12s.xml">
+      <configuration name="MT.testClassPathXmlApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testMapperScannerConfigurer_testMapperScannerConfigurer - 2020.04.10 at 16h 01m 24s.xml">
-      <configuration name="testMapperScannerConfigurer.testMapperScannerConfigurer" configurationId="JUnit" />
+    <history-entry file="MT_testClassPathXmlApp - 2020.04.19 at 01h 46m 24s.xml">
+      <configuration name="MT.testClassPathXmlApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testMapperScannerConfigurer_testMapperScannerConfigurer - 2020.04.10 at 16h 02m 38s.xml">
-      <configuration name="testMapperScannerConfigurer.testMapperScannerConfigurer" configurationId="JUnit" />
+    <history-entry file="MT_ttttttttttt - 2020.04.25 at 01h 51m 50s.xml">
+      <configuration name="MT.ttttttttttt" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testMapperScannerConfigurer_testMapperScannerConfigurer - 2020.04.10 at 16h 02m 54s.xml">
-      <configuration name="testMapperScannerConfigurer.testMapperScannerConfigurer" configurationId="JUnit" />
+    <history-entry file="MT_ttttttttttt - 2020.04.25 at 02h 02m 19s.xml">
+      <configuration name="MT.ttttttttttt" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39717000" />
+    <option name="totallyTimeSpent" value="137212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.33006042" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.32703927" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -503,21 +434,21 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.5968254" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.36825398" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.2904762" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.34126985" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.2825397" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32857144" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.37619048" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3968254" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.36666667" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Structure" order="1" sideWeight="0.5026455" weight="0.25" />
+      <window_info anchor="right" id="Structure" order="1" sideWeight="0.5026455" weight="0.30966768" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.32930514" />
@@ -536,22 +467,52 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/SqlSessionTemplate.class</url>
-          <line>190</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/SqlSessionTemplate.class</url>
-          <line>194</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/testMapperScannerConfigurer.java</url>
           <line>15</line>
           <properties />
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ioc/src/main/java/xml/cn/com/MT.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ioc/src/main/java/xml/cn/com/ApplicationStartListener.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ioc/src/main/java/xml/cn/com/MT.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/test/MT.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.2.2.RELEASE/spring-beans-5.2.2.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java</url>
+          <line>248</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java</url>
+          <line>238</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java</url>
+          <line>301</line>
+          <properties />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -562,413 +523,472 @@
         </breakpoints-dialog>
       </breakpoints-dialog>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="jdbcTemplate.queryTimeout" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>event.getApplicationContext().getParent()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>event.getApplicationContext().getBeanDefinitionCount()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>event.getApplicationContext()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ctx.getParent().getBeanDefinitionCount()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ctx.getBeanDefinitionCount()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ctx.getParent()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ctx.getBeanDefinitionNames()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar!/com/mysql/jdbc/Driver.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.12.RELEASE/spring-context-4.3.12.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="125">
+          <caret line="1095" column="36" selection-start-line="1095" selection-start-column="36" selection-end-line="1095" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/db.properties">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="172" selection-start-line="172" selection-end-line="172" />
+          <folding>
+            <element signature="e#7524#7525#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="59" column="69" selection-start-line="59" selection-start-column="69" selection-end-line="59" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE-sources.jar!/org/springframework/beans/factory/support/RootBeanDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/test/MT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="347" column="63" selection-start-line="347" selection-start-column="63" selection-end-line="348" selection-end-column="33" />
+          <folding>
+            <element signature="e#12952#13495#0" expanded="true" />
+            <element signature="e#13494#13495#0" expanded="true" />
+            <element signature="e#50050#50051#0" expanded="true" />
+            <element signature="e#50100#50101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/d2/IPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/d2/personSay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/d2/MT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/d2/Decorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="e#150#151#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/d2/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding>
+            <element signature="e#95#96#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/d2/PersonRunning.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/ExecutorType.java">
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="120" column="62" lean-forward="true" selection-start-line="120" selection-start-column="62" selection-end-line="120" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/SqlSessionFactoryBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-143">
-          <caret line="42" column="85" lean-forward="true" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/mapper/x.xml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/builder/xml/mybatis-3-config.dtd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/dao.java" />
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/bean/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="104">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/datasourceBySpringCls-01.xml">
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="7" selection-start-line="7" selection-end-line="13" selection-end-column="11" />
+        <state relative-caret-position="52">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/sql/Statement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130">
-          <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.2.2.RELEASE/spring-jdbc-5.2.2.RELEASE-sources.jar!/org/springframework/jdbc/core/JdbcTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="435" column="36" lean-forward="true" selection-start-line="435" selection-start-column="36" selection-end-line="435" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/SqlSessionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="205" column="34" lean-forward="true" selection-start-line="205" selection-start-column="34" selection-end-line="205" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="149" column="27" lean-forward="true" selection-start-line="149" selection-start-column="27" selection-end-line="149" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1014">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/mapper/Student.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/SqlSessionHolder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1123#1124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.2.2.RELEASE/spring-tx-5.2.2.RELEASE-sources.jar!/org/springframework/transaction/support/TransactionSynchronizationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="139" column="32" lean-forward="true" selection-start-line="139" selection-start-column="32" selection-end-line="139" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/SqlSessionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="39" column="90" lean-forward="true" selection-start-line="39" selection-start-column="90" selection-end-line="39" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/SqlSessionTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="194" selection-start-line="194" selection-end-line="194" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.2.2.RELEASE/spring-beans-5.2.2.RELEASE.jar!/org/springframework/beans/factory/xml/spring-beans.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="1066" column="68" lean-forward="true" selection-start-line="1066" selection-start-column="68" selection-end-line="1066" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/mapper/MapperFactoryBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#1762#1763#0" expanded="true" />
-            <element signature="e#1816#1817#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/dao/EmployeeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/lang/Long.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/dao/IStudentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/mapper/MapperFactoryBean.java">
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
-          <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
-          <folding>
-            <element signature="e#3471#3472#0" expanded="true" />
-            <element signature="e#3519#3520#0" expanded="true" />
-          </folding>
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/ConcreteComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="22" selection-end-column="11" />
+        <state relative-caret-position="91">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/TestJdbcTemplate.java">
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8.0_121/jre/lib/rt.jar!/com/sun/java/util/jar/pack/ClassReader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
           <folding>
+            <element signature="e#0#24788#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/testSqlSessionTemplate.java">
+    <entry file="jar://D:/jdk1.8.0_121/jre/lib/rt.jar!/sun/misc/URLClassPath.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="104">
+          <caret line="54" column="46" lean-forward="true" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8.0_121/jre/lib/deploy.jar!/com/sun/deploy/security/DeployURLClassPath.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="65" column="52" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="52" />
           <folding>
+            <element signature="e#0#41898#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/sqlSessionFactoryBean-SQLSessionTemplate-02.xml">
+    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="33" column="11" lean-forward="true" selection-start-line="18" selection-end-line="33" selection-end-column="11" />
+        <state relative-caret-position="159">
+          <caret line="300" column="27" selection-start-line="300" selection-start-column="27" selection-end-line="300" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/io/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="213" column="27" selection-start-line="213" selection-start-column="27" selection-end-line="213" selection-end-column="27" />
           <folding>
-            <element signature="e#1176#1192#0" expanded="true" />
+            <element signature="e#15796#15797#0" expanded="true" />
+            <element signature="e#15824#15825#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/sqlSessionFactoryBean-MapperFactoryBean-03.xml">
+    <entry file="jar://D:/jdk1.8.0_121/jre/lib/rt.jar!/sun/rmi/transport/proxy/HttpInputStream.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        <state relative-caret-position="78">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/io/PushbackInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/io/DataInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
           <folding>
-            <element signature="e#671#684#0" expanded="true" />
-            <element signature="e#740#756#0" expanded="true" />
-            <element signature="e#805#823#0" expanded="true" />
-            <element signature="e#876#889#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1051#1052#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/mapper/MapperScannerConfigurer.java">
+    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/io/BufferedInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="166" column="14" selection-start-line="166" selection-start-column="14" selection-end-line="166" selection-end-column="14" />
+        <state relative-caret-position="172">
+          <caret line="198" column="10" selection-start-line="198" selection-start-column="10" selection-end-line="198" selection-end-column="10" />
           <folding>
-            <element signature="e#6852#6853#0" expanded="true" />
-            <element signature="e#6895#6896#0" expanded="true" />
-            <element signature="e#8436#8437#0" expanded="true" />
-            <element signature="e#8488#8489#0" expanded="true" />
-            <element signature="e#9628#9629#0" expanded="true" />
-            <element signature="e#9658#9659#0" expanded="true" />
+            <element signature="e#5951#5952#0" expanded="true" />
+            <element signature="e#5996#5997#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/dao/IEmployeeMapper.java">
+    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/io/FilterInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="57" column="73" lean-forward="true" selection-start-line="57" selection-start-column="73" selection-end-line="57" selection-end-column="73" />
+          <folding>
+            <element signature="e#1393#1394#0" expanded="true" />
+            <element signature="e#1421#1422#0" expanded="true" />
+            <element signature="e#8838#8839#0" expanded="true" />
+            <element signature="e#8879#8880#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/io/ByteArrayInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/note">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/proxy/static/abc.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/proxy/static/Proxy/note">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/MT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/proxy/_static/proxy/_dynamic/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/WasProxyObjImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding>
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#154#155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/MT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/WasProxyObj.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/mapper/EmployeeMapper.xml">
+    <entry file="file://$PROJECT_DIR$/spring-thread/src/main/java/thd_single/LHPattern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/mapper01/EmployeeMapper.xml">
+    <entry file="file://$PROJECT_DIR$/spring-thread/src/main/java/thd_single/EHParttern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="39">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/mapper01/Student.xml">
+    <entry file="file://$PROJECT_DIR$/spring-thread/src/main/java/del/TestMyThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/Proxy_.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/MT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObj2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObjImpl2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#121#122#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObjImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/note">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/mybatis-config.xml">
+    <entry file="file://$PROJECT_DIR$/design-pattern/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
-          <caret line="21" column="62" lean-forward="true" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/mybatis-config01.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/extBaseInter.java">
+    <entry file="file://$PROJECT_DIR$/spring-thread/src/main/java/note">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="25" selection-start-column="13" selection-end-column="25" />
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/inter/ExtBaseInter.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/note">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="79" column="108" selection-start-line="79" selection-start-column="108" selection-end-line="79" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/testMapperFactoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/dao01/IEmployeeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/dao01/IStudentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.2.2.RELEASE/spring-tx-5.2.2.RELEASE-sources.jar!/org/springframework/dao/support/DaoSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="69" column="21" lean-forward="true" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/support/SqlSessionDaoSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/java/springdb/testMapperScannerConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-spring/src/main/resources/sqlSessionFactoryBean-MapperScannerConfigurer-04.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="42" column="79" lean-forward="true" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="79" />
+        <state relative-caret-position="143">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
         </state>
       </provider>
     </entry>
