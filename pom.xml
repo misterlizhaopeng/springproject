@@ -13,7 +13,5 @@
         <module>spring-ioc</module>
         <module>mybatis-spring</module>
         <module>spring-tx</module>
-        <module>spring-thread</module>
-        <module>design-pattern</module>
     </modules>
 </project>
