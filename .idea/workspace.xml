@@ -2,44 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="763e6564-80d4-4ca9-a03a-9c2dc4c53fa4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ioc/src/main/java/spring/expr/lp/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ioc/src/main/java/spring/expr/lp/MT2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/MT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/Proxy_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObj.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObj2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObjImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObjImpl2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/MT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/Proxy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/WasProxyObj.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/WasProxyObjImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/note" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/Component.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/ConcreteComponent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionA.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/MT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design-pattern/src/main/java/decorator/note" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-thread/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/del/TestMyThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/note" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_01/A.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_01/MT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_01/RunnableIns.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_01/ThreadIns.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_02/BuyTicket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_02/MT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_02/Ticket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_single/EHParttern.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_single/LHPattern.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-thread/src/main/java/thd_single/MT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-thread/src/test/java/com/lp/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/bean/MyFilterType.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/bean/MyFilterType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/AnnotationBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/AnnotationBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ioc/src/main/java/spring/expr/lp/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ioc/src/main/java/spring/expr/lp/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-tx/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-tx/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,11 +27,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/AnnotationBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="189">
+              <caret line="35" column="71" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/bean/MyFilterType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="12" column="99" selection-start-line="12" selection-start-column="99" selection-end-line="12" selection-end-column="99" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/bean/Cat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/bean/Dog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/bean/BigDog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/bean/BigCat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/AnnotationBeanLoad.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/PojoValConf.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/MyFactoryBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -107,6 +157,7 @@
       <find>构</find>
       <find>FilterInputStream</find>
       <find>decorator</find>
+      <find>AnnotationBean</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,13 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-thread/src/main/java/note" />
-        <option value="$PROJECT_DIR$/spring-thread/src/main/java/cls/ThreadIns.java" />
-        <option value="$PROJECT_DIR$/spring-thread/src/main/java/cls/MT.java" />
-        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thread/ThreadIns.java" />
-        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thddef/RunnableThread.java" />
-        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thddef/MT.java" />
-        <option value="$PROJECT_DIR$/spring-thread/src/main/java/thddef/RunnableIns.java" />
         <option value="$PROJECT_DIR$/spring-thread/src/main/java/thddef/A.java" />
         <option value="$PROJECT_DIR$/spring-thread/src/main/java/thddef/ThreadIns.java" />
         <option value="$PROJECT_DIR$/spring-thread/src/main/java/thd_01/RunnableIns.java" />
@@ -166,6 +210,13 @@
         <option value="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/MT.java" />
         <option value="$PROJECT_DIR$/design-pattern/src/main/java/_proxy/note" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-tx/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ioc/src/main/java/lp/annotation/com/House.java" />
+        <option value="$PROJECT_DIR$/spring-ioc/src/main/java/spring/expr/lp/MT2.java" />
+        <option value="$PROJECT_DIR$/spring-ioc/src/main/java/spring/expr/lp/A.java" />
+        <option value="$PROJECT_DIR$/spring-ioc/src/main/java/spring/expr/lp/AppConfig.java" />
+        <option value="$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/AnnotationBean.java" />
+        <option value="$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/bean/MyFilterType.java" />
       </list>
     </option>
   </component>
@@ -189,8 +240,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="265" />
-    <option name="y" value="87" />
+    <option name="x" value="346" />
+    <option name="y" value="72" />
     <option name="width" value="1024" />
     <option name="height" value="700" />
   </component>
@@ -203,7 +254,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,17 +261,63 @@
               <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="springproject" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springproject" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-ioc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springproject" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-ioc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springproject" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-ioc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springproject" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-ioc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springproject" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-ioc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springproject" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-ioc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587881573166" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588403029652" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -265,7 +361,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MT (1)">
+  <component name="RunManager" selected="Application.MT2">
     <configuration name="MT (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_proxy._dynamic.MT" />
       <module name="designpattern" />
@@ -293,19 +389,6 @@
       </method>
     </configuration>
     <configuration name="MT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="d2.MT" />
-      <module name="designpattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="d2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_proxy._static.MT" />
       <module name="designpattern" />
       <extension name="coverage">
@@ -318,15 +401,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMyThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="del.TestMyThread" />
-      <module name="springthread" />
+    <configuration name="MT2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="spring.expr.lp.MT2" />
+      <module name="springioc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="del.*" />
+          <option name="PATTERN" value="spring.expr.lp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MT.componentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springioc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lp.annotation.com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lp.annotation.com" />
+      <option name="MAIN_CLASS_NAME" value="lp.annotation.com.MT" />
+      <option name="METHOD_NAME" value="componentTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -348,19 +447,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestMyThread" />
-      <item itemvalue="JUnit.MT.ttttttttttt" />
-      <item itemvalue="Application.MT (3)" />
       <item itemvalue="Application.MT" />
+      <item itemvalue="Application.MT (3)" />
       <item itemvalue="Application.MT (1)" />
+      <item itemvalue="Application.MT2" />
+      <item itemvalue="JUnit.MT.ttttttttttt" />
+      <item itemvalue="JUnit.MT.componentTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MT2" />
+        <item itemvalue="JUnit.MT.componentTest" />
         <item itemvalue="Application.MT (1)" />
         <item itemvalue="Application.MT (1)" />
         <item itemvalue="Application.MT (3)" />
-        <item itemvalue="Application.MT" />
-        <item itemvalue="JUnit.MT.ttttttttttt" />
       </list>
     </recent_temporary>
   </component>
@@ -384,17 +484,23 @@
       <workItem from="1586618272212" duration="33744000" />
       <workItem from="1586842539004" duration="611000" />
       <workItem from="1587139853501" duration="8830000" />
-      <workItem from="1587230368241" duration="34442000" />
+      <workItem from="1587230368241" duration="38640000" />
+      <workItem from="1588043146841" duration="2626000" />
+      <workItem from="1588389903402" duration="6000" />
+      <workItem from="1588390236908" duration="1733000" />
+      <workItem from="1588402366599" duration="650000" />
     </task>
+    <task id="LOCAL-00001" summary="删除module spring-thread/design-pattern">
+      <created>1587881955498</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587881955498</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MT_testClassPathXmlApp - 2020.04.18 at 02h 58m 33s.xml">
-      <configuration name="MT.testClassPathXmlApp" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MT_testClassPathXmlApp - 2020.04.18 at 02h 58m 47s.xml">
-      <configuration name="MT.testClassPathXmlApp" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="House_te - 2020.04.18 at 16h 27m 58s.xml">
       <configuration name="House.te" configurationId="JUnit" />
     </history-entry>
@@ -419,14 +525,21 @@
     <history-entry file="MT_ttttttttttt - 2020.04.25 at 02h 02m 19s.xml">
       <configuration name="MT.ttttttttttt" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MT_componentTest - 2020.05.02 at 11h 37m 58s.xml">
+      <configuration name="MT.componentTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MT_componentTest - 2020.05.02 at 11h 39m 40s.xml">
+      <configuration name="MT.componentTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137212000" />
+    <option name="totallyTimeSpent" value="146425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.32703927" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.3429003" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -435,18 +548,18 @@
       <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.5968254" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32857144" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.34126985" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.2761905" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.2825397" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.37619048" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.37619048" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.36666667" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.34444445" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Structure" order="1" sideWeight="0.5026455" weight="0.30966768" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -462,6 +575,20 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="删除module spring-thread/design-pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除module spring-thread/design-pattern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -513,6 +640,12 @@
           <line>301</line>
           <properties />
           <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/bean/MyFilterType.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -573,422 +706,351 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.12.RELEASE/spring-context-4.3.12.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObjImpl2.java" />
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObjImpl.java" />
+    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/note" />
+    <entry file="file://$PROJECT_DIR$/design-pattern/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/spring-thread/src/main/java/note" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.2.2.RELEASE/spring-tx-5.2.2.RELEASE-sources.jar!/org/springframework/transaction/PlatformTransactionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="1095" column="36" selection-start-line="1095" selection-start-column="36" selection-end-line="1095" selection-end-column="36" />
+        <state relative-caret-position="122">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="172" selection-start-line="172" selection-end-line="172" />
-          <folding>
-            <element signature="e#7524#7525#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="208">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="59" column="69" selection-start-line="59" selection-start-column="69" selection-end-line="59" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE-sources.jar!/org/springframework/beans/factory/support/RootBeanDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/test/MT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.12.RELEASE/spring-beans-4.3.12.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="347" column="63" selection-start-line="347" selection-start-column="63" selection-end-line="348" selection-end-column="33" />
-          <folding>
-            <element signature="e#12952#13495#0" expanded="true" />
-            <element signature="e#13494#13495#0" expanded="true" />
-            <element signature="e#50050#50051#0" expanded="true" />
-            <element signature="e#50100#50101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/d2/IPerson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/d2/personSay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/d2/MT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/d2/Decorator.java">
+    <entry file="file://$PROJECT_DIR$/spring-tx/src/main/java/testtxport/MT.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="e#150#151#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-          </folding>
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/d2/Person.java">
+    <entry file="file://$PROJECT_DIR$/spring-tx/src/main/java/testtxport/TESTJdbcTemplateTx.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-          <folding>
-            <element signature="e#95#96#0" expanded="true" />
-            <element signature="e#155#156#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="351">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/d2/PersonRunning.java">
+    <entry file="file://$PROJECT_DIR$/spring-tx/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="351">
+          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/ConcreteComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/DecoratorActionB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk1.8.0_121/jre/lib/rt.jar!/com/sun/java/util/jar/pack/ClassReader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#24788#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk1.8.0_121/jre/lib/rt.jar!/sun/misc/URLClassPath.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="54" column="46" lean-forward="true" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk1.8.0_121/jre/lib/deploy.jar!/com/sun/deploy/security/DeployURLClassPath.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.12.RELEASE/spring-data-commons-2.0.12.RELEASE.jar!/org/springframework/data/transaction/ChainedTransactionManager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
-          <caret line="65" column="52" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="52" />
+          <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/xml/cn/com/FamilyHouse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/xml/cn/com/Dog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/xml/cn/com/MT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/x/b/n/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="e#0#41898#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="300" column="27" selection-start-line="300" selection-start-column="27" selection-end-line="300" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/io/InputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="213" column="27" selection-start-line="213" selection-start-column="27" selection-end-line="213" selection-end-column="27" />
-          <folding>
-            <element signature="e#15796#15797#0" expanded="true" />
-            <element signature="e#15824#15825#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk1.8.0_121/jre/lib/rt.jar!/sun/rmi/transport/proxy/HttpInputStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/io/PushbackInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="51" column="42" selection-start-line="51" selection-start-column="42" selection-end-line="51" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/io/DataInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-          <folding>
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1051#1052#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/io/BufferedInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="198" column="10" selection-start-line="198" selection-start-column="10" selection-end-line="198" selection-end-column="10" />
-          <folding>
-            <element signature="e#5951#5952#0" expanded="true" />
-            <element signature="e#5996#5997#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/io/FilterInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="57" column="73" lean-forward="true" selection-start-line="57" selection-start-column="73" selection-end-line="57" selection-end-column="73" />
-          <folding>
-            <element signature="e#1393#1394#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
-            <element signature="e#8838#8839#0" expanded="true" />
-            <element signature="e#8879#8880#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/io/ByteArrayInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/note">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/proxy/static/abc.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/proxy/static/Proxy/note">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/decorator/MT.java">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/x/b/n/MT.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="18" column="54" lean-forward="true" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/proxy/_static/proxy/_dynamic/Proxy.java">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/x/b/n/DynamicProxyInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-223">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/lp/annotation/com/Autowired_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/lp/annotation/com/BeanComponentOne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/WasProxyObjImpl.java">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/lp/annotation/com/ComponentProfile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding>
-            <element signature="e#118#119#0" expanded="true" />
-            <element signature="e#154#155#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="182">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/MT.java">
+    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="121" column="46" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.12.RELEASE/spring-context-4.3.12.RELEASE-sources.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="80" column="74" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/lp/annotation/com/House.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/spring/expr/lp/ElBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/Proxy.java">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/spring/expr/lp/Role.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="128">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
-            <element signature="e#124#125#0" expanded="true" />
-            <element signature="e#155#156#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_static/WasProxyObj.java">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/spring/expr/lp/MT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="21" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/spring/expr/lp/MT2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="9" column="94" selection-start-line="9" selection-start-column="94" selection-end-line="9" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/spring/expr/lp/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#387#388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/spring/expr/lp/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/lp/annotation/com/MT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="15" column="93" lean-forward="true" selection-start-line="15" selection-start-column="93" selection-end-line="15" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/lp/annotation/com/InterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/lp/annotation/com/HouseConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/com/lp/controller/UserControllerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/SelBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/MyImportBeanDefinitionRegistrar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/com/lp/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-thread/src/main/java/thd_single/LHPattern.java">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/com/lp/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/com/lp/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-thread/src/main/java/thd_single/EHParttern.java">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/HouseConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="143">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-thread/src/main/java/del/TestMyThread.java">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/AnnotationSerDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="65">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/Proxy_.java">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/mt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/PojoValConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/MT.java">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/MyFactoryBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="260">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObj2.java">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/AnnotationBeanLoad.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObjImpl2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
-            <element signature="e#121#122#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/_dynamic/WasProxyObjImpl.java">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/bean/BigCat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="52">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/src/main/java/_proxy/note">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/bean/BigDog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="52">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-pattern/pom.xml">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/bean/Dog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        <state relative-caret-position="52">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-thread/src/main/java/note">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/bean/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="26">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/config/AnnotationBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        <state relative-caret-position="189">
+          <caret line="35" column="71" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.12.RELEASE/spring-core-4.3.12.RELEASE-sources.jar!/org/springframework/core/type/filter/TypeFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="43" column="63" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/cn/com/bean/MyFilterType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="12" column="99" selection-start-line="12" selection-start-column="99" selection-end-line="12" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

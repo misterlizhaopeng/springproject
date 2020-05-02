@@ -28,29 +28,27 @@ import cn.com.condi.WindowsCondi;
 //		})
 
 
-
-
 @Configuration
-@ComponentScans(value = { @ComponentScan(
-		value = "cn.com", 
-		includeFilters = {
-				@Filter(type = FilterType.ASSIGNABLE_TYPE, classes = { UserService.class })//按照指定类型，就是后面classes就是设置的类型
-				,@Filter(type = FilterType.CUSTOM, classes = { MyFilterType.class })
-				}, 
-		useDefaultFilters = false) })
+@ComponentScans(value = {@ComponentScan(
+        value = "cn.com",
+        includeFilters = {
+                @Filter(type = FilterType.ASSIGNABLE_TYPE, classes = {UserService.class})//按照指定类型，就是后面classes就是设置的类型
+                , @Filter(type = FilterType.CUSTOM, classes = {MyFilterType.class})
+        },
+        useDefaultFilters = false)})
 
 //@Import(value= {Person.class,MyImportBeanDefinitionRegistrar.class})  //,SelBean.class
 //@Configuration
 public class AnnotationBean {
-	
-	
+
+
 //	@Scope("prototype")  // singleton
 //	@Bean(initMethod="a",destroyMethod="b")
 //	public Red  red() {
 //		return new Red();
 //	}
-	
-	
+
+
 //	@Bean("my-factoryBean")
 //	public MyFactoryBean myFactoryBean() {
 //		return  new MyFactoryBean();
@@ -59,7 +57,7 @@ public class AnnotationBean {
 //	@Scope("singleton")// prototype
 //	@Lazy
 //	@Conditional(value= {WindowsCondi.class})
-	
+
 //	@Bean("person-01")
 //	public Person person() {
 //		System.out.println("--------->");
