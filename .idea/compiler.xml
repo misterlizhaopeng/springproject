@@ -9,6 +9,7 @@
         <module name="mybatisspring" />
         <module name="springaop" />
         <module name="springioc" />
+        <module name="springredis" />
         <module name="springtx" />
       </profile>
     </annotationProcessing>

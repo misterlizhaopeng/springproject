@@ -13,5 +13,6 @@
         <module>spring-ioc</module>
         <module>mybatis-spring</module>
         <module>spring-tx</module>
+        <module>spring-redis</module>
     </modules>
 </project>
