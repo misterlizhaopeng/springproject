@@ -1,0 +1,43 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+
+    <!--1.配置redis连接池的配置-->
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <!--最大空闲数-->
+        <property name="maxIdle" value="50"></property>
+        <!--最大连接数-->
+        <property name="maxTotal" value="100"></property>
+        <!--最大等待时间-->
+        <property name="maxWaitMillis" value="20000"></property>
+    </bean>
+
+    <!--2.配置连接工厂
+            注意：spring data redis方案中提供了四种工厂模型，它们都是 RedisConnectionFactory 实现类，具体选择哪一个，
+                根据环境测试选择最佳连接工程，此处选择使用最广泛的
+                JredisConnectionFactory；
+                JedisConnectionFactory；
+                LettuceConnectionFactory;
+                SrpConnectionFactory
+                此时，我们
+    -->
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+        <property name="hostName" value="192.168.25.140"></property>
+        <property name="port" value="6380"></property>
+        <property name="poolConfig" ref="jedisPoolConfig"></property>
+        <!--登录redis的验证密码-->
+        <property name="password" value="lp"></property>
+    </bean>
+    <!--3.给redistemplate配置序列化接口
+        注意：在spring中，提供了RedisSerializer接口，帮我们序列化、反序列化想redis存储的数据；
+    -->
+    <bean class="org.springframework.data.redis.core.RedisTemplate">
+        <property name="connectionFactory" ref="jedisConnectionFactory"></property>
+        <property name="keySerializer" ref="stringRedisSerializer"></property>
+        <property name="valueSerializer" ref="jdkSerializationRedisSerializer"></property>
+    </bean>
+    <bean id="stringRedisSerializer" class="org.springframework.data.redis.serializer.StringRedisSerializer"></bean>
+    <bean id="jdkSerializationRedisSerializer" class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"></bean>
+
+</beans>
