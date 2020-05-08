@@ -103,7 +103,14 @@ java 有多种redis的api，比如Jredis、Lettuce等，为了融合不同的api
 
 
 
-        6.
+        6.发布订阅
+        测试代码：E_SubscribePublish、MyRedisMessageListener、redisTemplate-subscribe.xml
+                注意：
+                    配置监听类、监听容器，才能实现对渠道的监听操作；
+                    redis的发布-订阅模式，可以解决很多问题，一个发布者可以对应多个订阅者，比如记账系统完成记账之后，消息系统、邮件系统，微信系统
+                    都可以作为订阅者，订阅消息进行消费，如果以后还想增加一个彩信平台接受消息，只需要添加订阅即可；
+
+
 
         * */
     }
