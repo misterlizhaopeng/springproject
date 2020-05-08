@@ -154,6 +154,11 @@ java 有多种redis的api，比如Jredis、Lettuce等，为了融合不同的api
 
                 通过命令练习总结：缓存脚本只是把lua-script缓存起来，其他的参数在 evalsha 的时候再传递即可，如上面；
 
+                测试代码：H_TestLua
+                    简单字符串的存储：redis-cli下直接，执行输入lua代码，缓存脚本形式
+                    通过spring提供的RedisScript接口（实现类DefaultRedisScript）对象执行lua脚本操作对象类型的数据；
+                    执行lua脚本文件-当lua脚本逻辑比较多的时候，lua脚本文件显得尤为必要：
+
 
 
 
