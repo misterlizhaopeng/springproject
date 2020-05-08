@@ -160,10 +160,8 @@ java 有多种redis的api，比如Jredis、Lettuce等，为了融合不同的api
                     执行lua脚本文件-当lua脚本逻辑比较多的时候，lua脚本文件显得尤为必要：
 
 
-
-
-
             3.lua语言编写的脚本
+                测试代码：H_TestLua.testLuaFile()
 
 
         * */
