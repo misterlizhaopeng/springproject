@@ -117,6 +117,49 @@ java 有多种redis的api，比如Jredis、Lettuce等，为了融合不同的api
                     定时回收：指在确定的某一个时间触发一段代码，回收超时的键值对，缺点：如果被回收的键的值比较大，在回收的时候，redis会运行较长时间，从而导致卡顿；
                     惰性回收：get请求一个超时的键值对的时候，进行回收；
 
+        8.redis-lua
+
+            从redis的2.6以上版本开始支持lua脚本，由于reids的计算能力并不是很强大，然而lua脚本弥补了这一缺点，不仅仅如此，在redis中，使用lua的另一个优点：
+                在redis中，执行lua脚本不会被中断，具有原子性，这个特性有助于redis对并发数据一致性的支持；
+
+            redis支持两种lua代码书写风格：
+                1.redis-cli下直接，执行输入lua代码
+                2.lua语言编写的脚本
+                但是对于一些简单的lua脚本，redis支持缓存脚本，只是它会使用SHA-1算法对脚本进行签名，然后返回SHA-1标识，通过这个标识运行就行了；
+
+            1.redis-cli下直接，执行输入lua代码
+                基本格式
+                eval lua-script key-num [k1 k2 k3...]  [v1 v2 v3...]
+                eval：代表执行lua脚本的命令
+                lua-script：代表lua脚本
+                key-num：代表脚本中多少个key
+                [k1 k2 k3...]：传递给lua的参数
+                [v1 v2 v3...]：传递给lua的参数
+
+                例子：
+                eval "return 'hello lua'" 0
+                    解释："return 'hello lua'"标识lua-script，0标识0个key；
+                eval "redis.call('set',KEYS[1],ARGV[1])" 1 CC DD
+                    解释："redis.call('set',KEYS[1],ARGV[1])"标识lua-script，1标识1个key，剩下的是ARGV的值；
+
+           2.缓存脚本
+                基本格式：
+                script load scriptcontent
+                这个脚本返回一个SHA-1的字符串，通过这个字符串可以执行这个字符串代表的缓存脚本，缓存脚本的优点，减少网络上redis命令的传输数据；
+                缓存脚本使用命令格式
+                evalsha SHA-1的字符串  keynum [k1 k2 k3...]  [v1 v2 v3...]
+                例子：
+                    script load "redis.call('set',KEYS[1],ARGV[1])"
+                    evalsha 7cfb4342127e7ab3d63ac05e0d3615fd50b45b06 1 g gV
+
+                通过命令练习总结：缓存脚本只是把lua-script缓存起来，其他的参数在 evalsha 的时候再传递即可，如上面；
+
+
+
+
+
+            3.lua语言编写的脚本
+
 
         * */
     }

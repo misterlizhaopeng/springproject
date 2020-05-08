@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="763e6564-80d4-4ca9-a03a-9c2dc4c53fa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/F_ExpireOrders.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java" afterDir="false" />
     </list>
@@ -27,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="117" column="47" lean-forward="true" selection-start-line="117" selection-start-column="47" selection-end-line="117" selection-end-column="47" />
+            <state relative-caret-position="163">
+              <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -36,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/F_ExpireOrders.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="23" column="59" lean-forward="true" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+            <state relative-caret-position="141">
+              <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/D_Pipeline.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="94" column="71" lean-forward="true" selection-start-line="93" selection-start-column="8" selection-end-line="94" selection-end-column="71" />
+            <state relative-caret-position="283">
+              <caret line="97" column="79" lean-forward="true" selection-start-line="97" selection-start-column="79" selection-end-line="97" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -346,24 +345,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basic_type" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springproject" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springproject" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-redis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jedis_redisTemplate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -384,7 +365,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588952034689" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588958022512" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -547,7 +528,7 @@
       <workItem from="1588390236908" duration="1733000" />
       <workItem from="1588402366599" duration="7706000" />
       <workItem from="1588513184015" duration="12440000" />
-      <workItem from="1588822783437" duration="28967000" />
+      <workItem from="1588822783437" duration="32078000" />
     </task>
     <task id="LOCAL-00001" summary="删除module spring-thread/design-pattern">
       <created>1587881955498</created>
@@ -598,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588950544821</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="redis的超时命令，垃圾回收机制">
+      <created>1588952120855</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588952120855</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -634,13 +622,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194888000" />
+    <option name="totallyTimeSpent" value="197999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.21374622" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.17069486" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -650,7 +638,7 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.41904762" />
-      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.34603176" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.14603175" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -695,7 +683,8 @@
     <MESSAGE value="redis的string、hash命令客户端测试" />
     <MESSAGE value="redis的事务机制、管道技术" />
     <MESSAGE value="redis的订阅-发布" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis的订阅-发布" />
+    <MESSAGE value="redis的超时命令，垃圾回收机制" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis的超时命令，垃圾回收机制" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1149,16 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/D_Pipeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="94" column="71" lean-forward="true" selection-start-line="93" selection-start-column="8" selection-end-line="94" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
@@ -1199,10 +1178,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/D_Pipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="97" column="79" lean-forward="true" selection-start-line="97" selection-start-column="79" selection-end-line="97" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/F_ExpireOrders.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="23" column="59" lean-forward="true" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+        <state relative-caret-position="141">
+          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1211,8 +1200,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="117" column="47" lean-forward="true" selection-start-line="117" selection-start-column="47" selection-end-line="117" selection-end-column="47" />
+        <state relative-caret-position="163">
+          <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
         </state>
       </provider>
     </entry>
