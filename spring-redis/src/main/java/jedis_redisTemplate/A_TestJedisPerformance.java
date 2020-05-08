@@ -63,6 +63,48 @@ java 有多种redis的api，比如Jredis、Lettuce等，为了融合不同的api
                 通过上面封装RedisTemplate，在set、get的操作的时候，可能来自连接池中的不同连接，下面两个接口可以实现一个连接操作redis，常用的是接口SessionCallback ：
                     在B_TestRedisTemplate中，使用接口 SessionCallback，进行把多个redis的操作命令放到一个redis连接中；
                     其中RedisCallback比较底层，所以更多的使用SessionCallback；
+
+        3.package为 basic_type 下面为redis基本数据类型的联系，暂时只练习了最常用的string、hash 两种类型，以后有时间，再说；
+        4.事务
+            multi：表示开始redis事务
+                set k1 v1
+                ...一系列操作
+                set k2 v2
+            exec：表示执行事务
+            注意：
+                1.在multi和exec之间的每一个命令，会依次添加到队列中，没有真正的执行，在exec的时候，才真正的执行；
+                2.在multi和exec之间的每一个命令，如果存在错误的命令语法，比如incr （对一个key增1，但少写了key），则整个事务执行失败
+                3.在multi和exec之间的每一个命令，如果不存在错误的命令语法，而在执行队列的时候错误，比如incr k1（对一个k1的值为一个字符串进行增1），
+                    则整个事务中的队列中没问题的命令执行成功，有问题的命令失败；这种事务明显和mysql等关系型数据库的事务不一样，
+                    redis这么做就是为了俩字而设计的-性能；
+            discard：表示回滚事务，如果multi之后，不想提交队列里面的命令，则可以通过discard命令进行回滚；
+            spring-data-redis 在一个redis连接里面测试 redis 事务机制，见测试代码：C_Transaction
+
+
+            watch 机制：
+                在redis事务中，监视一个key的值是否变化，如果没有变化，整个正常的事务正常执行，否则回滚，这也就是乐观锁机制，实现方式为CAS(比较、交换)；
+                大致意思就是，在多线程中，对于一个共享数据，每一个线程都可以操作，当一个线程修改这个共享数据之前，先比较一下是否和当前线程的副本的数据一致（比如watch的数据），
+                如果一致，可以修改数据，如果不一致，则不能修改该共享数据；
+
+            对于CAS存在ABA的问题，就是当一个线程A监视共享数据之后去执行别的操作没有修改共享数据之前，线程B修改了共享数据为别的值，然后又修改回操作共享数据之前的值，结束
+            线程B的操作，然后线程A执行到了修改共享数据的命令，进行CAS判断，共享数据的值的确没有变化，但此时共享数据已被别的线程修改了，对于线程A来说会产生线程安全问题；
+
+            如何解决ABA问题：让每一个线程不仅仅关注共享数据的值，还要关注共享数据的version版本，也就是说，当一个线程修改了共享数据，版本递增；
+
+            在redis的watch中，不存在ABA的问题；
+
+        5.redis管道技术；
+            管道技术是一种协议，客户端无法演示；
+            见测试代码：D_Pipeline
+                JavaApi 测试 redis 管道技术的性能
+                java api操作redis的管道技术实现set、get-from-bk
+                spring 操作redis的管道技术实现set、get-from-bk
+            通过上面的测试，管道技术性能非常高；
+
+
+
+        6.
+
         * */
     }
 }
