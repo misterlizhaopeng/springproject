@@ -31,11 +31,27 @@
     </bean>
     <!--3.给redistemplate配置序列化接口
         注意：在spring中，提供了RedisSerializer接口，帮我们序列化、反序列化想redis存储的数据；
+        下面的keySerializer是针对key进行序列化，值一般为stringRedisSerializer ；
+        下面的valueSerializer是针对value进行序列化，值以为可为多个，stringRedisSerializer，jdkSerializationRedisSerializer；
+        一般：jdkSerializationRedisSerializer 用于序列化对象；
+        当进行处理字符串类型、整形的时候，jdkSerializationRedisSerializer慎用；
+
+
+        当处理redisTemplate.opsForHash().increment(key, "f3", 2);
+        需要修改默认序列化接口：
+            <property name="defaultSerializer" ref="stringRedisSerializer"></property>
+
     -->
     <bean class="org.springframework.data.redis.core.RedisTemplate">
         <property name="connectionFactory" ref="jedisConnectionFactory"></property>
+        <property name="defaultSerializer" ref="stringRedisSerializer"></property>
+
+        <!--hashKeySerializer、hashValueSerializer是对hash的key、value进行序列化的接口-->
+    <!--    <property name="hashKeySerializer" ref="stringRedisSerializer"></property>
+        <property name="hashValueSerializer" ref="stringRedisSerializer"></property>
+-->
         <property name="keySerializer" ref="stringRedisSerializer"></property>
-        <property name="valueSerializer" ref="jdkSerializationRedisSerializer"></property>
+        <property name="valueSerializer" ref="stringRedisSerializer"></property>
     </bean>
     <bean id="stringRedisSerializer" class="org.springframework.data.redis.serializer.StringRedisSerializer"></bean>
     <bean id="jdkSerializationRedisSerializer" class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"></bean>
