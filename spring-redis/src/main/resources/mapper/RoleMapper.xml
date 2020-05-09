@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mybatis_spring_redis.dao.RoleDao">
+    <select id="getRole" resultType="mybatis_spring_redis.bean.Role">
+		select id, role_name as
+		roleName, note from t_role where id = #{id}
+	</select>
+
+    <delete id="deleteRole">
+		delete from t_role where id=#{id}
+	</delete>
+
+    <insert id="insertRole" parameterType="mybatis_spring_redis.bean.Role"
+            useGeneratedKeys="true" keyProperty="id">
+		insert into t_role (role_name, note) values(#{roleName}, #{note})
+	</insert>
+
+    <update id="updateRole" parameterType="mybatis_spring_redis.bean.Role">
+		update t_role set role_name = #{roleName}, note = #{note}
+		where id = #{id}
+	</update>
+    <!--public List<Role> findRoles(@Param("roleName") String roleName, @Param("note") String note);-->
+    <select id="findRoles" resultType="mybatis_spring_redis.bean.Role">
+        select id, role_name as roleName, note from t_role
+        <where>
+            <if test="roleName != null and roleName != ''">and role_name like concat('%', #{roleName}, '%')</if>
+            <if test="note != null and note != ''">and note like concat('%', #{note}, '%')</if>
+        </where>
+    </select>
+
+</mapper>

@@ -84,7 +84,7 @@ public class App {
         RedisTemplate redisTemplate = applicationContext.getBean(RedisTemplate.class);
 
         String retVal = (String) redisTemplate.execute((RedisOperations ops) -> {
-            ops.boundValueOps("mykey").set("myvalue-a");
+            ops.boundValueOps("mykey").set("myvalue-ax");
             String value = (String) ops.boundValueOps("mykey").get();
             return value;
         });

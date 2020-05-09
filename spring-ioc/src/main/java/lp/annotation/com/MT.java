@@ -26,6 +26,9 @@ public class MT {
 			System.out.println(ss);
 		}
 
+		House bean = ctx.getBean(House.class);
+		System.out.println(bean);
+
 //		Autowired_Test autowired_Test = ctx.getBean("autowired_Test", Autowired_Test.class);
 //		autowired_Test.output();
 

@@ -175,7 +175,24 @@ java 有多种redis的api，比如Jredis、Lettuce等，为了融合不同的api
 
         12.JavaAPI、Spring 两个客户端使用哨兵模式访问redis-from-bk
             测试代码：App
+        13.在spring缓存机制和redis结合
+        测试项目：见包mybatis_spring_redis下面的文件：
 
+            具体操作：
+            1.配置数据源，测试代码mybatis_spring_redis.config下的ConfigDB；
+            2.配置面向mapper接口编程，测试代码mybatis_spring_redis.config下的MapperConfig；
+                注意：上面步骤1、步骤2是完全按照spring的注解的方式配置的；
+            3.配置spring的缓存管理器：
+                在spring项目中提供了缓存管理器接口：CacheManager，有了这个接口，各种各样的缓存
+                就可以实现它来提供管理器的功能了，在spring-data-redis.jar包中实现CacheManager的接口是RedisCacheManager，
+                因此要定义RedisCacheManager的Bean，不过在定义它之前需要定义RedisTemplate；
+                    【当前spring-data-redis的版本是1.8.4.RELEASE，如果更高版本，不是这一的写法，此处要注意】
+                具体操作文件：mybatis_spring_redis.config下的RedisConfig；
+                //@EnableCaching 表示spring ioc容器启动缓存机制！！！！
+
+
+
+            测试类：mybatis_spring_redis.config下的TestSpringRedisFrmSrc；
 
         * */
     }
