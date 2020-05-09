@@ -163,6 +163,19 @@ java 有多种redis的api，比如Jredis、Lettuce等，为了融合不同的api
             3.lua语言编写的脚本
                 测试代码：H_TestLua.testLuaFile()
 
+        9.如何保证redis操作队列的原子性？
+            a.redis事务
+            b.redis+lua脚本操作
+        10.内存回收策略：
+            一般会采用allkeys-lru：当内存不足以容纳新写入数据时，在键空间中，移除最近最少使用的key
+        11.复制
+            读写分离、高可用；
+            主从复制：
+                一般情况下主服务负责写，从服务负责读，从而实现了读写分离，提高服务读写性能；
+
+        12.JavaAPI、Spring 两个客户端使用哨兵模式访问redis-from-bk
+            测试代码：App
+
 
         * */
     }

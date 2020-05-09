@@ -8,6 +8,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.Transaction;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -116,7 +117,10 @@ public class H_TestLua {
         // 使用返回的标识执行，其中第二个参数2，表示使用2个键
         // 而后面的字符串都转化为了二进制字节进行传输
         Object obj = jedis.evalsha(sha1, 2, "key1".getBytes(), "key2".getBytes(), "2".getBytes(), "4".getBytes());
-
+        Transaction multi = jedis.multi();
+        multi.set("a", "b");
+        multi.set("ac", "bd");
+        multi.exec();
         System.out.println(obj);
 
     }
