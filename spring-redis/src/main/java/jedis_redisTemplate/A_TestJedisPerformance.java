@@ -206,9 +206,16 @@ java 有多种redis的api，比如Jredis、Lettuce等，为了融合不同的api
                     @Cacheable，在查询数据时，如果缓存没有，则去数据库查询，然后再添加到缓存中；
                     如果查询结果为空，在添加redis缓存会出错，在@Cacheable中添加[unless="#result == null" 表示当结果为空的时候，不存入缓存]即可解决问题；
                     对于@CachePut来说，注意，操作持久化数据库之后的【返回值】很重要，具体见测试代码RoleServiceImpl中的更新方法：
-
-
-
+                    对于@CacheEvict来说，value、key属性和注解@Cacheable、@CachePut 一个意思，allEntities表示删除删除缓存服务器中所有的缓存，key失效，慎用；
+                        beforeInvocation属性默认false，表示执行完方法之后执行缓存删除，true表示先执行缓存删除，在执行方法，beforeInvocation名字说明了此处用了AOP动态代理技术；
+                6.不适用缓存的情况:
+                    命中率低的数据,不建议使用缓存,简单来说就是不被经常查询的数据,不用缓存
+                7.自调用问题:
+                    因为spring的缓存注解@Cacheable/@CachePut/@CacheEvict实现的功能也是通过AOP实现的，在spring事务中也遇到过类似的问题，就是在同一个类中调用其他有缓存注解的方法，
+                    缓存功能失效；原因：自调用没有产生代理对象，这个和数据库事务是一个道理；见测试代码 RoleServiceImpl
+        14.RedisTemplate对象下面操作流水线、事务和lua脚本实例
+            见：测试代码：I_TestPipeTransLuaImpl
+            总结：管道技术、或者事务技术，redis客户端的多个命令都是一次放入队列中的，把队列的命令一次性发送到redis服务，减少网络传输，提高数据处理的性能
 
             测试类：mybatis_spring_redis.config下的TestSpringRedisFrmSrc；
 

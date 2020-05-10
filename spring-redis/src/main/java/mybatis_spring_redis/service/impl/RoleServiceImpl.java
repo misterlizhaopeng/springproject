@@ -91,7 +91,7 @@ public class RoleServiceImpl implements RoleService {
     @Transactional(isolation = Isolation.READ_COMMITTED, propagation = Propagation.REQUIRED)
     public int insertRoles(List<Role> roleList) {
         for (Role role : roleList) {
-            //同一类的方法调用自己方法，产生自调用[插入：失效]问题
+            //同一类的方法调用自己方法，产生自调用[插入缓存：失效]问题
             this.insertRole(role);
         }
         return roleList.size();
