@@ -189,6 +189,24 @@ java 有多种redis的api，比如Jredis、Lettuce等，为了融合不同的api
                     【当前spring-data-redis的版本是1.8.4.RELEASE，如果更高版本，不是这一的写法，此处要注意】
                 具体操作文件：mybatis_spring_redis.config下的RedisConfig；
                 //@EnableCaching 表示spring ioc容器启动缓存机制！！！！
+            4.准备service、serviceImpl的类，测试代码mybatis_spring_redis.service.RoleServiceImpl
+                @EnableCaching之后，spring 就可以允许通过下面常用的三个注解使用缓存了，具体用法如下：
+                @Cacheable/@CachePut/@CacheEvict
+                1.@Cacheable、 @CachePut 只能用在有返回值的方法上，而@CacheEvict可以用在无返回值的方法上，因为它不需要保存任何值；
+                2.一般情况下，对于查询方法，用@Cacheable标注，修改、添加方法用@CachePut、删除方法用@CacheEvict；
+                3.对于注解@Cacheable/@CachePut/@CacheEvict中的属性key、value：
+                    value表示：是一个数组，可以引用多个缓存管理器；
+                    key表示缓存中的键，它支持spring表达式，前面 笔记【5-bk-装配spring bean】 中介绍过spring表达式；
+                4.spring表达式和缓存注解的约定，通过这些约定去引用方法的参数和返回值，使得其注入key所定义的spring表达式中，常用的spring表达式如下：
+                    #result、#argument
+                    对于#result：表示方法返回值，还可以通过spring表达式读取其属性值；
+                    对于#argument：方法参数的名字，可以直接#参数名，也可以使用#p0或#a0的形式，0代表参数的索引
+                    具体见service的代码
+                5.注意:
+                    @Cacheable，在查询数据时，如果缓存没有，则去数据库查询，然后再添加到缓存中；
+                    如果查询结果为空，在添加redis缓存会出错，在@Cacheable中添加[unless="#result == null" 表示当结果为空的时候，不存入缓存]即可解决问题；
+                    对于@CachePut来说，注意，操作持久化数据库之后的【返回值】很重要，具体见测试代码RoleServiceImpl中的更新方法：
+
 
 
 

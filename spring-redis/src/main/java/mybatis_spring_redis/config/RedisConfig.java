@@ -34,6 +34,7 @@ public class RedisConfig {
         JedisConnectionFactory connectionFactory = new JedisConnectionFactory(poolConfig);
         connectionFactory.setHostName("192.168.25.140");
         connectionFactory.setPort(6380);
+        connectionFactory.setPassword("lp");
         // 调用后初始化方法，没有它将抛出异常，此处要注意，因为对象JedisConnectionFactory不是spring实例化，所以，此处要人为调用
         connectionFactory.afterPropertiesSet();
         // 自定Redis序列化器
