@@ -213,11 +213,29 @@ java 有多种redis的api，比如Jredis、Lettuce等，为了融合不同的api
                 7.自调用问题:
                     因为spring的缓存注解@Cacheable/@CachePut/@CacheEvict实现的功能也是通过AOP实现的，在spring事务中也遇到过类似的问题，就是在同一个类中调用其他有缓存注解的方法，
                     缓存功能失效；原因：自调用没有产生代理对象，这个和数据库事务是一个道理；见测试代码 RoleServiceImpl
+        测试类：mybatis_spring_redis.config下的TestSpringRedisFrmSrc；
+
         14.RedisTemplate对象下面操作流水线、事务和lua脚本实例
             见：测试代码：I_TestPipeTransLuaImpl
             总结：管道技术、或者事务技术，redis客户端的多个命令都是一次放入队列中的，把队列的命令一次性发送到redis服务，减少网络传输，提高数据处理的性能
 
-            测试类：mybatis_spring_redis.config下的TestSpringRedisFrmSrc；
+
+        15.抢红包；见springboot项目：lpDel
+             项目实现的大致步骤
+                1.创建db表，并添加红包数据，具体sql见文件：mysql.sql
+                2.创建springboot项目，添加pojo、mapper、service、controller；
+            grab red packet四种测试
+            1.正常抢红包（只在隔离级别为读已提交，在数据库层面没有锁等别的任何操作）；
+            2.基于1的情况下，基于innodb的主键查询的for update 行锁（也叫悲观锁）；
+            3.基于1的情况下，采用乐观锁（存在丢失更新，引入重入机制，重入的两种方法：时间戳、尝试多次）
+                对于重入机制的个人分析：对于时间戳来说，如果尝试时间断了，也可能继续存在丢失更新的情况，经过测试，当然此情况应该也存在尝试多次这种方法；
+
+        16.使用redis抢红包，见springboot项目：lpDel
+            测试redis抢红包的实现步骤：
+                hset red_packet_30 stock 1000
+                hset red_packet_30 unit_amount 10
+                再向数据表，添加一条id为30的红包记录
+               redis+lua实现原子性操作，性能和悲观锁、乐观锁比较一下，是多么的明显！！！！
 
         * */
     }
