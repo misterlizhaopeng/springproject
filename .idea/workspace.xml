@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="763e6564-80d4-4ca9-a03a-9c2dc4c53fa4" name="Default Changelist" comment="redis-@CacheEvict、不适用缓存的情况分析、aop技术下的自调用问题和之前的事务自调用的问题、RedisTemplate操作管道技术、事务、多条命令测试">
-      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/resources/mybatis-config-red-package.xml" afterDir="false" />
+    <list default="true" id="763e6564-80d4-4ca9-a03a-9c2dc4c53fa4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/I_ClusterClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java" afterDir="false" />
     </list>
@@ -27,8 +27,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="237" column="57" lean-forward="true" selection-start-line="237" selection-start-column="57" selection-end-line="237" selection-end-column="57" />
+            <state relative-caret-position="154">
+              <caret line="238" column="17" selection-start-line="238" selection-start-column="17" selection-end-line="238" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/I_ClusterClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,6 +64,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/com/lp/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-redis/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="143">
@@ -65,27 +86,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
               <caret line="56" column="102" selection-start-line="56" selection-start-column="102" selection-end-line="56" selection-end-column="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/mybatis_spring_redis/config/RedisConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/basic_type/TestHash.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -135,7 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mybatis-spring</find>
       <find>getSingleton</find>
       <find>构</find>
       <find>FilterInputStream</find>
@@ -165,9 +164,11 @@
       <find>@CachePut(value = &quot;redisCacheManager&quot;, key = &quot;'redis_role_'+#result.id&quot;)</find>
       <find>CAS</find>
       <find>boundListOps</find>
+      <find>192.168.25.153</find>
     </findStrings>
     <replaceStrings>
       <replace>mybatis_spring_redis.bean</replace>
+      <replace>192.168.25.140</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -176,7 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-redis/src/main/java/basic_type/TestCal.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/resources/redisTemplate.xml" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/basic_type/TestHash.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/C_Pipeline.java" />
@@ -209,7 +209,6 @@
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/mybatis_spring_redis/config/ConfigDB.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/resources/mapper/RoleMapper.xml" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/mybatis_spring_redis/config/MapperConfig.java" />
-        <option value="$PROJECT_DIR$/spring-redis/src/main/java/com/lp/App.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/D_Pipeline.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/mybatis_spring_redis/config/RedisConfig.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/mybatis_spring_redis/service/RoleService.java" />
@@ -226,6 +225,8 @@
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/H_TestLua.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/basic_type/Chapter18Main.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/basic_type/TestString.java" />
+        <option value="$PROJECT_DIR$/spring-redis/src/main/java/com/lp/App.java" />
+        <option value="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/I_ClusterClient.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java" />
       </list>
     </option>
@@ -260,8 +261,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="440" />
-    <option name="y" value="165" />
+    <option name="x" value="519" />
+    <option name="y" value="153" />
     <option name="width" value="1024" />
     <option name="height" value="700" />
   </component>
@@ -324,6 +325,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springproject" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jedis_redisTemplate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -344,7 +354,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589282143558" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589467572501" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -388,7 +398,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestString">
+  <component name="RunManager" selected="JUnit.I_ClusterClient.testCluster">
     <configuration name="TestSpringRedisFrmSrc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="mybatis_spring_redis.main.TestSpringRedisFrmSrc" />
       <module name="springredis" />
@@ -415,22 +425,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App.testSring_Sentinel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springredis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lp" />
-      <option name="MAIN_CLASS_NAME" value="com.lp.App" />
-      <option name="METHOD_NAME" value="testSring_Sentinel" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="H_TestLua.testLuaFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springredis" />
       <extension name="coverage">
@@ -442,6 +436,22 @@
       <option name="PACKAGE_NAME" value="jedis_redisTemplate" />
       <option name="MAIN_CLASS_NAME" value="jedis_redisTemplate.H_TestLua" />
       <option name="METHOD_NAME" value="testLuaFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="I_ClusterClient.testCluster" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springredis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jedis_redisTemplate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jedis_redisTemplate" />
+      <option name="MAIN_CLASS_NAME" value="jedis_redisTemplate.I_ClusterClient" />
+      <option name="METHOD_NAME" value="testCluster" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -464,19 +474,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.App.testSring_Sentinel" />
       <item itemvalue="Application.TestSpringRedisFrmSrc" />
       <item itemvalue="JUnit.TestSpringRedisFrmSrc.testRedisTemplate" />
       <item itemvalue="JUnit.H_TestLua.testLuaFile" />
       <item itemvalue="Application.TestString" />
+      <item itemvalue="JUnit.I_ClusterClient.testCluster" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.I_ClusterClient.testCluster" />
         <item itemvalue="Application.TestString" />
         <item itemvalue="JUnit.H_TestLua.testLuaFile" />
         <item itemvalue="Application.TestSpringRedisFrmSrc" />
         <item itemvalue="JUnit.TestSpringRedisFrmSrc.testRedisTemplate" />
-        <item itemvalue="JUnit.App.testSring_Sentinel" />
       </list>
     </recent_temporary>
   </component>
@@ -507,7 +517,7 @@
       <workItem from="1588402366599" duration="7706000" />
       <workItem from="1588513184015" duration="12440000" />
       <workItem from="1588822783437" duration="45038000" />
-      <workItem from="1589013643018" duration="40678000" />
+      <workItem from="1589013643018" duration="58257000" />
     </task>
     <task id="LOCAL-00001" summary="删除module spring-thread/design-pattern">
       <created>1587881955498</created>
@@ -614,13 +624,17 @@
       <option name="project" value="LOCAL" />
       <updated>1589106136542</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="redis-redis抢红包演变过程，实现项目为lpDel，此次提交提交索引">
+      <created>1589282233139</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1589282233139</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="App_testSring_Sentinel - 2020.05.10 at 01h 28m 00s.xml">
-      <configuration name="App.testSring_Sentinel" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="App_testSring_Sentinel - 2020.05.10 at 01h 28m 16s.xml">
       <configuration name="App.testSring_Sentinel" configurationId="JUnit" />
     </history-entry>
@@ -648,9 +662,12 @@
     <history-entry file="H_TestLua_testLuaFile - 2020.05.12 at 17h 15m 16s.xml">
       <configuration name="H_TestLua.testLuaFile" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="I_ClusterClient_testCluster - 2020.05.14 at 22h 44m 08s.xml">
+      <configuration name="I_ClusterClient.testCluster" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="251637000" />
+    <option name="totallyTimeSpent" value="269216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
@@ -665,8 +682,8 @@
       <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.5968254" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32857144" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.2031746" />
-      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.2730159" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.44920635" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.35873017" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -719,7 +736,8 @@
     <MESSAGE value="redis-spring的缓存机制和redis结合-准备阶段（spring注解方式配置访问mybatis；配置redis[方式的]缓存管理器RedisCacheManager对象，该接口实现了spring的CacheManager接口）" />
     <MESSAGE value="redis-spring的缓存机制和redis结合-测试阶段（@Cacheable（常用于查询）、@CachePut常用于（添加 删除）、@CacheEvict（常用于删除）、属性value key）" />
     <MESSAGE value="redis-@CacheEvict、不适用缓存的情况分析、a和事务问题、RedisTemplate操作管道技术、事务、多条命令测试op下自调用系列问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis-@CacheEvict、不适用缓存的情况分析、a和事务问题、RedisTemplate操作管道技术、事务、多条命令测试op下自调用系列问题" />
+    <MESSAGE value="redis-redis抢红包演变过程，实现项目为lpDel，此次提交提交索引" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis-redis抢红包演变过程，实现项目为lpDel，此次提交提交索引" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -805,13 +823,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/lp/annotation/com/House.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="26" column="26" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-ioc/src/main/java/lp/annotation/com/Family.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
@@ -917,13 +928,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/com/lp/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="92" column="1" lean-forward="true" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1183,10 +1187,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/com/lp/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/I_ClusterClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="237" column="57" lean-forward="true" selection-start-line="237" selection-start-column="57" selection-end-line="237" selection-end-column="57" />
+        <state relative-caret-position="154">
+          <caret line="238" column="17" selection-start-line="238" selection-start-column="17" selection-end-line="238" selection-end-column="17" />
         </state>
       </provider>
     </entry>

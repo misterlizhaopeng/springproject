@@ -236,7 +236,8 @@ java 有多种redis的api，比如Jredis、Lettuce等，为了融合不同的api
                 hset red_packet_30 unit_amount 10
                 再向数据表，添加一条id为30的红包记录
                redis+lua实现原子性操作，性能和悲观锁、乐观锁比较一下，是多么的明显！！！！
-
+        17.java代码 连接集群
+            见测试代码：I_ClusterClient
         * */
     }
 }
