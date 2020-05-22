@@ -11,6 +11,7 @@
         <module name="springioc" />
         <module name="springredis" />
         <module name="springtx" />
+        <module name="springzookeeper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -14,5 +14,6 @@
         <module>mybatis-spring</module>
         <module>spring-tx</module>
         <module>spring-redis</module>
+        <module>spring-zookeeper</module>
     </modules>
 </project>

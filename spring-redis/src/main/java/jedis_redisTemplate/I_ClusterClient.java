@@ -18,6 +18,9 @@ public class I_ClusterClient {
         nodes.add(new HostAndPort("192.168.25.140", 7004));
         nodes.add(new HostAndPort("192.168.25.140", 7005));
         nodes.add(new HostAndPort("192.168.25.140", 7006));
+
+        nodes.add(new HostAndPort("192.168.25.140", 7009));
+        nodes.add(new HostAndPort("192.168.25.140", 7010));
         JedisCluster jedisCluster = new JedisCluster(nodes);
 
         // 第二步：直接使用JedisCluster对象操作redis。在系统中单例存在。
