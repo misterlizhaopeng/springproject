@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="763e6564-80d4-4ca9-a03a-9c2dc4c53fa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-zookeeper/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/lp/MyZkWatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-zookeeper/src/test/java/com/lp/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-redis/src/main/java/bloom_filter/TestBloom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/I_ClusterClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/I_ClusterClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-redis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,20 +26,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-zookeeper/src/main/java/com/lp/MyZkWatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="229" column="38" lean-forward="true" selection-start-line="229" selection-start-column="38" selection-end-line="229" selection-end-column="38" />
+            <state>
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-zookeeper/src/main/java/com/lp/MyZkWatcher.java">
+        <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/H_TestLua.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="236">
+              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#testLuaObject#0;class#H_TestLua#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1859">
+              <caret line="143" column="64" selection-start-line="143" selection-start-column="64" selection-end-line="143" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/com/lp/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-redis/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/bloom_filter/TestBloom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="10" column="47" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,7 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getSingleton</find>
       <find>构</find>
       <find>FilterInputStream</find>
       <find>decorator</find>
@@ -96,6 +134,7 @@
       <find>CAS</find>
       <find>boundListOps</find>
       <find>192.168.25.153</find>
+      <find>lua</find>
     </findStrings>
     <replaceStrings>
       <replace>mybatis_spring_redis.bean</replace>
@@ -108,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/C_Transaction.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/resources/redisTemplate-subscribe.xml" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/bean/MyRedisMessageListener.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/E_SubscribePublish.java" />
@@ -133,7 +171,6 @@
         <option value="$PROJECT_DIR$/spring-ioc/src/main/java/lp/annotation/com/HouseConfig.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/mybatis_spring_redis/config/Config.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/mybatis_spring_redis/config/RootConfig.java" />
-        <option value="$PROJECT_DIR$/spring-redis/pom.xml" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/mybatis_spring_redis/config/ConfigDB.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/resources/mapper/RoleMapper.xml" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/mybatis_spring_redis/config/MapperConfig.java" />
@@ -151,14 +188,16 @@
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/annotation_ssm_redpackage.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/annotation_ssm_redpackage/controller/a.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/basic_type/Chapter18Main.java" />
-        <option value="$PROJECT_DIR$/spring-redis/src/main/java/basic_type/TestString.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/com/lp/App.java" />
-        <option value="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java" />
         <option value="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/I_ClusterClient.java" />
-        <option value="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/H_TestLua.java" />
         <option value="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/lp/MainTest.java" />
         <option value="$PROJECT_DIR$/spring-zookeeper/pom.xml" />
         <option value="$PROJECT_DIR$/spring-zookeeper/src/main/java/com/lp/MyZkWatcher.java" />
+        <option value="$PROJECT_DIR$/spring-redis/src/main/java/basic_type/TestString.java" />
+        <option value="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java" />
+        <option value="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/H_TestLua.java" />
+        <option value="$PROJECT_DIR$/spring-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-redis/src/main/java/bloom_filter/TestBloom.java" />
       </list>
     </option>
   </component>
@@ -192,8 +231,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="346" />
-    <option name="y" value="72" />
+    <option name="x" value="38" />
+    <option name="y" value="57" />
     <option name="width" value="1024" />
     <option name="height" value="700" />
   </component>
@@ -218,20 +257,37 @@
             <path>
               <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="springproject" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-zookeeper" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-redis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="springproject" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-zookeeper" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="springproject" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-zookeeper" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springproject" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springproject" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bloom_filter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -242,7 +298,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590153665589" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590553354858" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -287,7 +343,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyZkWatcher">
+  <component name="RunManager" selected="Application.TestBloom">
     <configuration name="MyZkWatcher" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lp.MyZkWatcher" />
       <module name="springzookeeper" />
@@ -301,12 +357,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSpringRedisFrmSrc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mybatis_spring_redis.main.TestSpringRedisFrmSrc" />
+    <configuration name="TestBloom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bloom_filter.TestBloom" />
       <module name="springredis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mybatis_spring_redis.main.*" />
+          <option name="PATTERN" value="bloom_filter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -360,19 +416,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestSpringRedisFrmSrc" />
       <item itemvalue="Application.TestString" />
       <item itemvalue="Application.MyZkWatcher" />
       <item itemvalue="JUnit.H_TestLua.testLuaFile" />
       <item itemvalue="JUnit.I_ClusterClient.testCluster" />
+      <item itemvalue="Application.TestBloom" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestBloom" />
         <item itemvalue="Application.MyZkWatcher" />
         <item itemvalue="JUnit.I_ClusterClient.testCluster" />
         <item itemvalue="Application.TestString" />
         <item itemvalue="JUnit.H_TestLua.testLuaFile" />
-        <item itemvalue="Application.TestSpringRedisFrmSrc" />
       </list>
     </recent_temporary>
   </component>
@@ -405,7 +461,9 @@
       <workItem from="1588822783437" duration="45038000" />
       <workItem from="1589013643018" duration="60706000" />
       <workItem from="1589706643384" duration="1199000" />
-      <workItem from="1589996468535" duration="6432000" />
+      <workItem from="1589996468535" duration="11536000" />
+      <workItem from="1590310351974" duration="4930000" />
+      <workItem from="1590516738004" duration="2255000" />
     </task>
     <task id="LOCAL-00001" summary="删除module spring-thread/design-pattern">
       <created>1587881955498</created>
@@ -526,7 +584,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589467595196</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="zookeeper-分布式应用配置管理">
+      <created>1590154836666</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1590154836670</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -562,12 +627,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279296000" />
+    <option name="totallyTimeSpent" value="291585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.21148036" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973545" visible="true" weight="0.26963747" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -576,7 +642,7 @@
       <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.5968254" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32857144" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.1984127" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.2793651" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.35873017" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -632,7 +698,8 @@
     <MESSAGE value="redis-@CacheEvict、不适用缓存的情况分析、a和事务问题、RedisTemplate操作管道技术、事务、多条命令测试op下自调用系列问题" />
     <MESSAGE value="redis-redis抢红包演变过程，实现项目为lpDel，此次提交提交索引" />
     <MESSAGE value="java代码 连接集群" />
-    <option name="LAST_COMMIT_MESSAGE" value="java代码 连接集群" />
+    <MESSAGE value="zookeeper-分布式应用配置管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="zookeeper-分布式应用配置管理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -712,34 +779,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47-sources.jar!/com/mysql/jdbc/MysqlIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="2529" selection-start-line="2529" selection-end-line="2529" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.2.RELEASE/spring-context-5.2.2.RELEASE-sources.jar!/org/springframework/cache/CacheManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.2.RELEASE/spring-context-5.2.2.RELEASE-sources.jar!/org/springframework/cache/support/AbstractCacheManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="39" column="60" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.1.2.RELEASE/spring-context-support-5.1.2.RELEASE.jar!/org/springframework/cache/transaction/AbstractTransactionSupportingCacheManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="10" column="84" selection-start-line="10" selection-start-column="84" selection-end-line="10" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.2.RELEASE/spring-data-redis-2.1.2.RELEASE-sources.jar!/org/springframework/data/redis/cache/RedisCacheManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
@@ -931,13 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Jedis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="2781" column="29" selection-start-line="2781" selection-start-column="29" selection-end-line="2781" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/I_ClusterClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -962,20 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/com/lp/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-redis/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-redis/src/main/resources/redisTemplate.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="728">
@@ -983,30 +1001,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/basic_type/TestString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/H_TestLua.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-zookeeper/src/main/java/com/lp/MainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-zookeeper/src/main/java/com/lp/MainTest.java" />
     <entry file="file://$PROJECT_DIR$/spring-zookeeper/src/test/java/com/lp/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1035,10 +1030,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/basic_type/TestString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Jedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="2666" column="16" selection-start-line="2666" selection-start-column="16" selection-end-line="2666" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/JedisCommands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-zookeeper/src/main/java/com/lp/MyZkWatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state>
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1047,8 +1063,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="229" column="38" lean-forward="true" selection-start-line="229" selection-start-column="38" selection-end-line="229" selection-end-column="38" />
+        <state relative-caret-position="1859">
+          <caret line="143" column="64" selection-start-line="143" selection-start-column="64" selection-end-line="143" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/com/lp/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/H_TestLua.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testLuaObject#0;class#H_TestLua#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/19.0/guava-19.0.jar!/com/google/common/hash/BloomFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/19.0/guava-19.0-sources.jar!/com/google/common/hash/BloomFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="138" column="17" selection-start-line="138" selection-start-column="17" selection-end-line="138" selection-end-column="17" />
+          <folding>
+            <element signature="e#5554#5555#0" expanded="true" />
+            <element signature="e#5632#5633#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-redis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/bloom_filter/TestBloom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

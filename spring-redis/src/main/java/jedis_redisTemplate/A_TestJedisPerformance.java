@@ -141,6 +141,7 @@ java 有多种redis的api，比如Jredis、Lettuce等，为了融合不同的api
                     解释："return 'hello lua'"标识lua-script，0标识0个key；
                 eval "redis.call('set',KEYS[1],ARGV[1])" 1 CC DD
                     解释："redis.call('set',KEYS[1],ARGV[1])"标识lua-script，1标识1个key，剩下的是ARGV的值；
+                注意：KEYS和ARGV必须大写 ，且成对出现，不能只出现KEYS，没有ARGV参数，个人亲测；
 
            2.缓存脚本
                 基本格式：
