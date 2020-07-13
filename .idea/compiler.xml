@@ -9,6 +9,7 @@
         <module name="mybatisspring" />
         <module name="springaop" />
         <module name="springioc" />
+        <module name="springrabbitmq" />
         <module name="springredis" />
         <module name="springtx" />
         <module name="springzookeeper" />

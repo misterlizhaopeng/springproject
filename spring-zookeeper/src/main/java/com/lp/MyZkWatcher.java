@@ -21,6 +21,7 @@ public class MyZkWatcher implements Watcher {
                 new MyZkWatcher());
         // 等待zk连接成功的通知
         connectedSemaphore.await();
+
         // 获取path目录节点的配置数据，并注册默认的监听器
         System.out.println(new String(zk.getData (path, true, stat) ));
         Thread.sleep(Integer.MAX_VALUE);

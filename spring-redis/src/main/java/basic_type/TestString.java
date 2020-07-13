@@ -3,14 +3,36 @@ package basic_type;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.data.redis.core.RedisTemplate;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
+
 public class TestString {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:redisTemplate.xml");
         RedisTemplate redisTemplate = ctx.getBean(RedisTemplate.class);
 
+//        Long add = redisTemplate.opsForSet().add("课程", "如提高性能优化的课程", "如何优化redis，提高ha高可用");
+
+        Set set_kc = redisTemplate.opsForSet().members("课程");
+        set_kc.forEach(a->{
+            System.out.println("-------------------------------------->"+a);
+        });
+
+
         // 设值
         redisTemplate.opsForValue().set("key1", "value1");
         redisTemplate.opsForValue().set("key2", "value2");
+
+        String [] strArr={"b","c","d"};
+        List<String> list = Arrays.asList(strArr);
+        List list1 = redisTemplate.opsForValue().multiGet(list);
+        System.out.println("----------------------------------------------list->start");
+        list1.forEach(a->{
+            System.out.println(a);
+        });
+        System.out.println("----------------------------------------------list->end");
+
 
         // 通过key获取值
         String value1 = (String) redisTemplate.opsForValue().get("key1");

@@ -15,5 +15,6 @@
         <module>spring-tx</module>
         <module>spring-redis</module>
         <module>spring-zookeeper</module>
+        <module>spring-rabbitmq</module>
     </modules>
 </project>

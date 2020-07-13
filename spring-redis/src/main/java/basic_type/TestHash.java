@@ -13,6 +13,39 @@ public class TestHash {
 
 
 
+
+
+        //hset article:20010280 id 20010290 title 这是一个比较不错的文章，关于redis性能调优的  createtime 1990808 update 158900987
+        //hset article:20010270 id 20010290 title 这是一个比较不错的文章，关于redis性能调优的  createtime 1990808 update 158900987
+        Map<String,String> m1=new HashMap<>();
+
+        m1.put("id", "20010270");
+        m1.put("title", "redis is goog tool");
+        m1.put("createtime", new Date().toString());
+        m1.put("update", new Date().toString());
+
+//        m1.put("id", "20010290");
+//        m1.put("title", "这是一个比较不错的文章，关于redis性能调优的");
+//        m1.put("createtime", new Date().toString());
+//        m1.put("update", new Date().toString());
+        redisTemplate.opsForHash().putAll("article:20010270",m1);
+
+
+//        Object title = redisTemplate.opsForHash().get("article:20010280", "title");
+//        System.out.println(title);
+
+
+
+        System.out.println("----------------------------------------------hash->start");
+        //redisTemplate.opsForHash().entries()
+        Map hashKey = redisTemplate.boundHashOps("hashKey").entries();//
+        System.out.println(hashKey);
+        System.out.println("----------------------------------------------hash->end");
+
+
+
+
+
         String key = "hash";
         Map<String, String> map = new HashMap<String, String>();
         map.put("f1", "val1");
