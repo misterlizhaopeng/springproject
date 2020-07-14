@@ -32,8 +32,10 @@ public class TestProducer {
              *
              * 说明:假如我们消息发送的时候没有指定具体的交换机的话，那么就会发送到rabbimtq 指定默认的交换机上，
              * 那么该交换机就会去根据 routing_key 查找对应的 queueName 然后发送的该队列上.
+             *
+             * 也可以这么理解：每一个虚拟主机上都会存在这种情况；
              */
-            channel.basicPublish("", "lp-queue-01", null, message.getBytes());
+            channel.basicPublish("", "lp-queue-011", null, message.getBytes());
         }
         //关闭连接
         channel.close();

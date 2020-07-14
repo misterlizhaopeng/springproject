@@ -25,7 +25,7 @@ public class TestConsumer {
         Channel channel = connection.createChannel();
 
         //声明队列名称
-        String  queueName = "lp-queue-01";
+        String  queueName = "lp-queue-011";
 
         channel.queueDeclare(queueName,true,false,false,null);
 
