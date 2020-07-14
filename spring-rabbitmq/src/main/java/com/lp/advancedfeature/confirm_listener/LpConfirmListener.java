@@ -12,11 +12,11 @@ public class LpConfirmListener implements ConfirmListener {
      */
     @Override
     public void handleAck(long deliveryTag, boolean multiple) throws IOException {
-        System.out.println("消息deliveryTag" + deliveryTag + "被正常签收.............");
+        System.out.println("消息deliveryTag:" + deliveryTag + "被正常签收.............");
     }
 
     @Override
     public void handleNack(long deliveryTag, boolean multiple) throws IOException {
-        System.out.println("消息deliveryTag" + deliveryTag + "没被签收");
+        System.out.println("消息deliveryTag:" + deliveryTag + "没被签收");
     }
 }
