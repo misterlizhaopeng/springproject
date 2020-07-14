@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="763e6564-80d4-4ca9-a03a-9c2dc4c53fa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/ack_nack/LpAckConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/ack_nack/TestConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/ack_nack/TestProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/dlx/DlxConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/dlx/TestConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/dlx/TestProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/consumer_limit/LpQosConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/consumer_limit/LpQosConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/dlx/TestConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/dlx/TestConsumer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,23 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/dlx/TestProducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/dlx/TestConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="317">
+              <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/dlx/DlxConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="286">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,10 +64,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/customconsumer/TestProducer.java">
+        <entry file="file://$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/dlx/TestProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="12" column="58" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="58" />
+            <state relative-caret-position="172">
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,13 +76,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/customconsumer/TestConsumer.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/3.6.5/amqp-client-3.6.5-sources.jar!/com/rabbitmq/client/Channel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" column="49" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="199">
+              <caret line="526" column="20" selection-start-line="526" selection-start-column="20" selection-end-line="526" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -120,8 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>语</find>
-      <find>@CachePut(value = &quot;redisCacheManager&quot;, key = &quot;'redis_role_'+#result.id&quot;)</find>
       <find>CAS</find>
       <find>boundListOps</find>
       <find>192.168.25.153</find>
@@ -150,6 +127,8 @@
       <find>lp.retrun.direct</find>
       <find>lp</find>
       <find>tuling</find>
+      <find>basicConsume</find>
+      <find>100000</find>
     </findStrings>
     <replaceStrings>
       <replace>mybatis_spring_redis.bean</replace>
@@ -248,7 +227,6 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
-    <option name="y" value="2" />
     <option name="width" value="1378" />
     <option name="height" value="780" />
   </component>
@@ -323,17 +301,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lp" type="462c0819:PsiDirectoryNode" />
               <item name="advancedfeature" type="462c0819:PsiDirectoryNode" />
-              <item name="customconsumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springproject" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lp" type="462c0819:PsiDirectoryNode" />
-              <item name="advancedfeature" type="462c0819:PsiDirectoryNode" />
               <item name="dlx" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -385,7 +352,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594754351681" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1594754937862" />
     <property name="last_opened_file_path" value="S:/tuling/sanqi/四：分布式框架专题/10.Rabbitmq基本概念讲解 -司马/tulingvip-rabbitmq" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -438,7 +405,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestConsumer">
+  <component name="RunManager" selected="Application.TestConsumer (1)">
+    <configuration name="TestConsumer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lp.advancedfeature.dlx.TestConsumer" />
+      <module name="springrabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lp.advancedfeature.dlx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestConsumer (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.lp.advancedfeature.consumer_limit.TestConsumer" />
       <module name="springrabbitmq" />
@@ -491,33 +471,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lp.advancedfeature.customconsumer.TestProducer" />
-      <module name="springrabbitmq" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lp.advancedfeature.customconsumer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.TestProducer" />
       <item itemvalue="Application.TestConsumer (2)" />
       <item itemvalue="Application.TestProducer (1)" />
       <item itemvalue="Application.TestConsumer" />
       <item itemvalue="Application.TestProducer (2)" />
+      <item itemvalue="Application.TestConsumer (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestConsumer (1)" />
         <item itemvalue="Application.TestConsumer" />
         <item itemvalue="Application.TestProducer (2)" />
         <item itemvalue="Application.TestConsumer (2)" />
         <item itemvalue="Application.TestProducer (1)" />
-        <item itemvalue="Application.TestProducer" />
       </list>
     </recent_temporary>
   </component>
@@ -564,7 +531,7 @@
       <workItem from="1594195369878" duration="8362000" />
       <workItem from="1594549590035" duration="1240000" />
       <workItem from="1594629426337" duration="10134000" />
-      <workItem from="1594711295933" duration="14413000" />
+      <workItem from="1594711295933" duration="15125000" />
     </task>
     <task id="LOCAL-00001" summary="删除module spring-thread/design-pattern">
       <created>1587881955498</created>
@@ -734,7 +701,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594750772741</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="rabbitmq-消息队列-advancedfeature-ack- 消费端的ack模式">
+      <created>1594754389218</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1594754389218</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -770,7 +744,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="362278000" />
+    <option name="totallyTimeSpent" value="362990000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -785,7 +759,7 @@
       <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.5968254" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32857144" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.128" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3152" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.35873017" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -848,7 +822,8 @@
     <MESSAGE value="rabbitmq-消息队列-advancedfeature-returnlistener" />
     <MESSAGE value="rabbitmq-消息队列-advancedfeature-customconsumer-消费端 的自定义消费监听" />
     <MESSAGE value="rabbitmq-消息队列-advancedfeature-qos 消费端限流" />
-    <option name="LAST_COMMIT_MESSAGE" value="rabbitmq-消息队列-advancedfeature-qos 消费端限流" />
+    <MESSAGE value="rabbitmq-消息队列-advancedfeature-ack- 消费端的ack模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="rabbitmq-消息队列-advancedfeature-ack- 消费端的ack模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -928,21 +903,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/util/concurrent/LinkedBlockingDeque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="568" column="13" lean-forward="true" selection-start-line="568" selection-start-column="13" selection-end-line="568" selection-end-column="13" />
-          <folding>
-            <element signature="e#3920#3921#0" expanded="true" />
-            <element signature="e#3952#3953#0" expanded="true" />
-            <element signature="e#18496#18497#0" expanded="true" />
-            <element signature="e#18530#18531#0" expanded="true" />
-            <element signature="e#19252#19253#0" expanded="true" />
-            <element signature="e#19286#19287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/jdk1.8.0_121/src.zip!/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -1283,13 +1243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/3.6.5/amqp-client-3.6.5-sources.jar!/com/rabbitmq/client/Channel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="704" column="16" lean-forward="true" selection-start-line="704" selection-start-column="16" selection-end-line="704" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/3.6.5/amqp-client-3.6.5-sources.jar!/com/rabbitmq/client/DefaultConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -1341,20 +1294,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/3.6.5/amqp-client-3.6.5-sources.jar!/com/rabbitmq/client/Channel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="526" column="20" selection-start-line="526" selection-start-column="20" selection-end-line="526" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/dlx/DlxConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="286">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/3.6.5/amqp-client-3.6.5-sources.jar!/com/rabbitmq/client/ConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="73" column="64" selection-start-line="73" selection-start-column="63" selection-end-line="73" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/dlx/TestProducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        <state relative-caret-position="172">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1363,8 +1330,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-rabbitmq/src/main/java/com/lp/advancedfeature/dlx/TestConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="317">
+          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

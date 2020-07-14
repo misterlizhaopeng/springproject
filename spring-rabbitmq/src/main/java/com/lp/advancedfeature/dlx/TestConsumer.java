@@ -13,8 +13,8 @@ public class TestConsumer {
         ConnectionFactory connectionFactory = new ConnectionFactory();
         connectionFactory.setHost("192.168.25.140");
         connectionFactory.setPort(5672);
-        connectionFactory.setUsername("lisi");
         connectionFactory.setVirtualHost("consu_definition");
+        connectionFactory.setUsername("lisi");
         connectionFactory.setPassword("lisi");
         connectionFactory.setConnectionTimeout(100000);
 
