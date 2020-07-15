@@ -5,6 +5,7 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
+//启动生产者，
 public class TestProducer {
     public static void main(String[] args) throws Exception{
         //设置连接工厂

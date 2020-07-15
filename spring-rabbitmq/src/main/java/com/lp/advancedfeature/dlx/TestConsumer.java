@@ -38,9 +38,9 @@ public class TestConsumer {
 
 
         Map<String, Object> queueArgs = new HashMap<>();
-        //正常队列上绑定死信队列
+        //在正常队列上绑定死信队列
         queueArgs.put("x-dead-letter-exchange", dlxExhcangeName);
-        queueArgs.put("x-max-length", 4);
+        queueArgs.put("x-max-length", 5);// 设置正常队列的消息长度为5（假如一共发送了100条，那么95条先转到私信队列上）,生产端设置了消息10s不消费，自动转到到死信队列中去；
         channel.queueDeclare(nomalqueueName, true, false, false, queueArgs);
         channel.queueBind(nomalqueueName, nomalExchangeName, routingKey);
 
