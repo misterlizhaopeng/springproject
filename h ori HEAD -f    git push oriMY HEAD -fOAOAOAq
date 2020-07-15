@@ -1,0 +1,53 @@
+[33m9ecad50[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m HEAD@{0}: reset: moving to 9ecad50
+[33m83b336b[m[33m ([m[1;31moriMY/master[m[33m, [m[1;31mori/master[m[33m)[m HEAD@{1}: reset: moving to HEAD
+[33m83b336b[m[33m ([m[1;31moriMY/master[m[33m, [m[1;31mori/master[m[33m)[m HEAD@{2}: commit: rabbitmq-消息队列-advancedfeature-ttl-设置队列的消息长度以及过期时间
+[33m9ecad50[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m HEAD@{3}: commit: rabbitmq-消息队列-advancedfeature-ack- 死信队列-释义
+[33md597720[m HEAD@{4}: commit: rabbitmq-消息队列-advancedfeature-ack- 死信队列
+[33mbcc96ea[m HEAD@{5}: commit: rabbitmq-消息队列-advancedfeature-ack- 消费端的ack模式
+[33m0d89e7a[m HEAD@{6}: commit: rabbitmq-消息队列-advancedfeature-qos 消费端限流
+[33mfe00125[m HEAD@{7}: commit: rabbitmq-消息队列-advancedfeature-customconsumer-消费端 的自定义消费监听
+[33m3bca17f[m HEAD@{8}: commit: rabbitmq-消息队列-advancedfeature-returnlistener
+[33m517f41e[m HEAD@{9}: commit: rabbitmq-消息队列-advancedfeature-生产者confirm-ok
+[33m4ac5411[m HEAD@{10}: commit: rabbitmq-消息队列-basic-认识（三种交换机的原始功能）
+[33mb1b82cd[m HEAD@{11}: commit: spring-redis项目下：测试bloomfilter过滤器
+[33maec348c[m HEAD@{12}: commit: zookeeper-分布式应用配置管理
+[33mfd76d8c[m HEAD@{13}: commit: java代码 连接集群
+[33m4b29439[m HEAD@{14}: commit: redis-redis抢红包演变过程，实现项目为lpDel，此次提交提交索引
+[33m6f0f38b[m HEAD@{15}: commit (amend): redis-@CacheEvict、不适用缓存的情况分析、aop下自调用问题和事务自调用问题（其实是一个问题）、RedisTemplate对象操作管道技术、事务、多条命令测试小结
+[33mace91ac[m HEAD@{16}: commit (amend): redis-@CacheEvict、不适用缓存的情况分析、aop下自调用问题和事务自调用问题（其实是一个问题）、RedisTemplate对象操作管道技术、事务、多条命令测试小结
+[33m59dd618[m HEAD@{17}: commit (amend): redis-@CacheEvict、不适用缓存的情况分析、a和事务问题、RedisTemplate操作管道技术、事务、多条命令测试op下自调用系列问题
+[33m047e0ca[m HEAD@{18}: commit (amend): redis-@CacheEvict、不适用缓存的情况分析、a和事务问题、RedisTemplate操作管道技术、事务、多条命令测试op下自调用系列问题
+[33m74e5e14[m HEAD@{19}: commit (amend): redis-@CacheEvict、不适用缓存的情况分析、a和事务问题、RedisTemplate操作管道技术、事务、多条命令测试op下自调用系列问题
+[33ma75765b[m HEAD@{20}: commit (amend): redis-@CacheEvict、不适用缓存的情况分析、a和事务问题、RedisTemplate操作管道技术、事务、多条命令测试op下自调用系列问题
+[33m2200537[m HEAD@{21}: commit (amend): redis-@CacheEvict、不适用缓存的情况分析、a和事务问题、RedisTemplate操作管道技术、事务、多条命令测试op下自调用系列问题
+[33mff9cdb8[m HEAD@{22}: commit: redis-@CacheEvict、不适用缓存的情况分析、a和事务问题、RedisTemplate操作管道技术、事务、多条命令测试op下自调用系列问题
+[33m94212f4[m HEAD@{23}: commit: redis-spring的缓存机制和redis结合-测试阶段（@Cacheable（常用于查询）、@CachePut常用于（添加 删除）、@CacheEvict（常用于删除）、属性value key）
+[33mf0b5418[m HEAD@{24}: commit: redis-spring的缓存机制和redis结合-准备阶段（spring注解方式配置访问mybatis；配置redis[方式的]缓存管理器RedisCacheManager对象，该接口实现了spring的CacheManager接口）
+[33m15d3d47[m HEAD@{25}: commit: redis-主从、读写分离(通过ip直接连接即可：暂时)、哨兵（JavaAPI、Spring）两种客户端方式访问redis
+[33m3e95435[m HEAD@{26}: commit: redis-lua-update
+[33m809e8cb[m HEAD@{27}: commit: redis-lua脚本
+[33me865aee[m HEAD@{28}: commit: redis-lua脚本
+[33mf203618[m HEAD@{29}: commit: redis的超时命令，垃圾回收机制
+[33m9323f51[m HEAD@{30}: commit: redis的订阅-发布
+[33m3b40733[m HEAD@{31}: commit: redis的事务机制、管道技术
+[33mec15c77[m HEAD@{32}: commit: redis的string、hash命令客户端测试
+[33ma21da5c[m HEAD@{33}: commit: redis的jedis、redistemplate的演变，使用
+[33m59edd0d[m HEAD@{34}: commit: spring-redis-哨兵客户端测试
+[33m087e29e[m HEAD@{35}: commit: update
+[33mae4fe0f[m HEAD@{36}: commit: 删除module spring-thread/design-pattern
+[33m882baf0[m HEAD@{37}: commit: 删除module spring-thread/design-pattern
+[33m2fdc277[m HEAD@{38}: commit: design-pattern-proxy
+[33m54f98b9[m HEAD@{39}: commit: design-pattern-decorator
+[33ma774291[m HEAD@{40}: commit: 多线程、单例
+[33me00d08d[m HEAD@{41}: commit: 测试spring生成bean生命周期的机制
+[33mcdafbeb[m HEAD@{42}: commit: spring-ioc的module的；spring创建父子容器以及 ApplicationStartListener 二次调用的问题
+[33me300d01[m HEAD@{43}: commit: spring-tx ；mybatis-spring、spring-tx 的隔离级别、传播属性
+[33m1b826a2[m HEAD@{44}: commit: spring-tx 测试模板
+[33m9172e46[m HEAD@{45}: commit: spirng 的数据库编程，以及mybatis-spring组件如何实现spring和mybatis的结合，然后实现mapper接口编程
+[33mb99c228[m HEAD@{46}: commit: spirng 的数据库编程，以及mybatis-spring组件如何实现spring和mybatis的结合，然后实现mapper接口编程
+[33mc001c38[m HEAD@{47}: commit: List<String> list=Arrays.asList()
+[33m8d8b447[m HEAD@{48}: commit: List<String> list=Arrays.asList()
+[33m722f7c4[m HEAD@{49}: commit: spring-aop 基于xml（织入，给通知传递参数，引入(就是增强现有的类)）
+[33m32ea35c[m HEAD@{50}: commit: spring-aop 基于xml（织入，给通知传递参数，引入(就是增强现有的类)）
+[33m18d0e4a[m HEAD@{51}: commit: spring -ioc项目
+[33m2fd958a[m HEAD@{52}: commit (initial): spring-ioc的项目
