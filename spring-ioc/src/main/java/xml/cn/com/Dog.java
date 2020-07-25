@@ -31,12 +31,13 @@ public class Dog implements BeanNameAware,BeanFactoryAware,ApplicationContextAwa
 		System.out.println("执行接口ApplicationContextAware的方法setApplicationContext(ApplicationContext applicationContext)；容器的Id："+applicationContext.getId());
 	}
 
+	// 在接口 BeanPosProcessor 的方法 postProcessBeforeInitialization 之后执行
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		System.out.println("执行接口InitializingBean的方法afterPropertiesSet()；属性设置完成了");
 	}
 	
-	//自定义初始化方法（在AfterBeanPostProcess之前执行，在AfterBeanPostProcess之后销毁方法之前，为bean的生存期；）
+	//自定义初始化方法（在 afterPropertiesSet 之后， 接口 BeanPosProcessor 的方法 postProcessAfterInitialization 之前执行执行；）
 	public void contomInit() {
 		System.out.println("自定义初始化方法");
 	}
