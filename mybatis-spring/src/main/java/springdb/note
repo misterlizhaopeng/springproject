@@ -24,10 +24,10 @@ JdbcTemplate 的介绍
     5.JdbcTemplate 在spring 框架中来说，解决了jdbc代码凌乱的现状，其实其本身也不是很完美；但无论如何，也体现了spring的设计的主导思想之一：
         模板化编程，减少开发者的工作量；jdbcTemplate配置见文件：datasourceBySpringCls.xml
         配置好了，就可以通过jdbctemplate对数据库进行操作了,见类：springdb.TestJdbcTemplate;
-    6.JdbcTemplate 还不能支持事务，需要引入对应的事物管理器才支持事务；
+    6.JdbcTemplate 【还不能支持事务】，需要引入对应的事物管理器才支持事务；
 
 mybatis-spring 项目理解
-    7. 使用mybatis-spring项目包操作数据库，可以更好的是业务层和模型层分离，与此同时，spring使用mybatis更简单，节省了不少代码，甚至不用操作
+    7. 使用mybatis-spring项目包操作数据库，可以更好的使业务层和模型层分离，与此同时，spring使用mybatis更简单，节省了不少代码，甚至不用操作
         sqlSessionFactory、SqlSession对象进行数据库的操作，因为项目mybatis-spring为开发者封装了它们；
     8.  只是mybatis-spring不是spring的子项目，因为spring 3发版时，mybatis 3还没有发版，所以spring只对mybatis的旧版ibatis支持；
     9.  mybatis社区开发了mybatis-spring，可以通过如下gav坐标获取到：
@@ -39,7 +39,7 @@ mybatis-spring 项目理解
                     </dependency>
     10.配置mybatis-spring的步骤：
         10.1 配置数据源
-        10.2 配置SqlSessionFactory  （可以选择性的 配置SqlSessionTemplate，在同事配置的情况下，优先选择SqlSessionTemplate）
+        10.2 配置SqlSessionFactory  （可以选择性的 配置SqlSessionTemplate，在同时配置的情况下，优先选择SqlSessionTemplate）
         10.3 配置Mapper  可以配置单个Mapper，也可以通过扫描的方式生成Mapper；此时spring ioc会生成对应接口，这样就可以通过注入的方式获取资源了；
         10.4 事务管理 【见项目：spring-tx】
 
@@ -86,7 +86,7 @@ mybatis-spring 项目理解
 
             </bean>
 
-         也可以通过 markerInterface标记扩展接口代替 annotationClass属性，让所有的mapper接口继承markerInterface标记的接口，同样可以实现mapper接口编程，如下所示：
+         也可以通过 markerInterface 标记扩展接口代替 annotationClass 属性，让所有的mapper接口继承 markerInterface 标记的接口，同样可以实现mapper接口编程，如下所示：
 
             <!-- MapperScannerConfigurer - markerInterface -->
             <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
