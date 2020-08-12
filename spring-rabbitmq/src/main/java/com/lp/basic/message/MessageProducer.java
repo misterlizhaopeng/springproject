@@ -32,7 +32,7 @@ public class MessageProducer {
         headsMap.put("name","lp-name");
 
         AMQP.BasicProperties build = new AMQP.BasicProperties().builder()
-                .deliveryMode(2)//2标识持久化消息  1标识 服务重启后 消息不会被持久化
+                .deliveryMode(2)//2 标识持久化消息  1 标识 服务重启后 消息不会被持久化
                 .expiration("100000")//消息过期 10s
                 .contentEncoding("utf-8")
                 .correlationId(UUID.randomUUID().toString())

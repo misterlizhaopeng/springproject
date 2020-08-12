@@ -55,19 +55,19 @@ public class TestProducer {
         /**
          * 发送消息
          * mandatory:该属性设置为false,那么不可达消息就会被 mq broker 给删除掉；
-         *          如果为true,那么mq会调用我们得retrunListener 来告诉我们业务系统 说该消息
+         *          如果为true,那么mq会调用我们得 retrunListener 来告诉我们业务系统 说该消息
          *          不能成功发送.
          */
         channel.basicPublish(exchangeName,okRoutingKey,true,basicProperties,msgContext.getBytes());
 
 
         String errorMsg1 = "你好 李朋 mandotory为false...."+System.currentTimeMillis();
-
         //错误发送   mandotory为false
         channel.basicPublish(exchangeName,errorRoutingKey,false,basicProperties,errorMsg1.getBytes());
 
-        String errorMsg2 = "你好 李朋 mandotory为true...."+System.currentTimeMillis();
 
+
+        String errorMsg2 = "你好 李朋 mandotory为true...."+System.currentTimeMillis();
         //错误发送 mandotory 为true
         channel.basicPublish(exchangeName,errorRoutingKey,true,basicProperties,errorMsg2.getBytes());
 
