@@ -9,9 +9,9 @@ public class AppConfig {
 		return new Cat();
 	}
 	
-	@Bean
-	public Cat cat02() {
-		return new Cat();
-	}
+//	@Bean
+//	public Cat cat02() {
+//		return new Cat();
+//	}
 	
 }

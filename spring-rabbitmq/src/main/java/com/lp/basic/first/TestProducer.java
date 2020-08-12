@@ -30,9 +30,9 @@ public class TestProducer {
              * The default exchange is implicitly bound to every queue, with a routing key equal to the queue name.
              * It is not possible to explicitly bind to, or unbind from the default exchange. It also cannot be deleted.
              *
-             * 说明:假如我们消息发送的时候没有指定具体的交换机的话，那么就会发送到rabbimtq 指定默认的交换机上，
+             * 说明: 假如我们消息发送的时候没有指定具体的交换机的话，那么就会发送到 rabbimtq 指定默认的交换机上，
              * 那么该交换机就会去根据 routing_key 查找对应的 queueName 然后发送的该队列上.
-             *
+
              * 也可以这么理解：每一个虚拟主机上都会存在这种情况；
              */
             channel.basicPublish("", "lp-queue-011", null, message.getBytes());

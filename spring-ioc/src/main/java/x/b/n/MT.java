@@ -79,6 +79,8 @@ public class MT {
 	public void test() {
 		@SuppressWarnings("resource")
 		AnnotationConfigApplicationContext c = new AnnotationConfigApplicationContext(AppConfig.class);
+		Cat cat = c.getBean(Cat.class);
+
 		String[] s = c.getBeanDefinitionNames();
 		List<String> list = Arrays.asList(s);
 		list.forEach(a -> {
