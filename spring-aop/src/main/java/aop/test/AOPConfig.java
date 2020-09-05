@@ -7,6 +7,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
+/**
+ @EnableAspectJAutoProxy 原理分析：
+
+
+ */
 
 //2 开启切面
 @EnableAspectJAutoProxy

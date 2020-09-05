@@ -20,7 +20,7 @@
         <property name="dataSource" ref="dataSource"></property>
     </bean>
 
-    <!--xml方式配置声明式事务 start-->
+    <!--xml 方式配置声明式事务 start-->
     <bean id="transactionInterceptor" class="org.springframework.transaction.interceptor.TransactionInterceptor">
         <property name="transactionManager" ref="transactionManager"></property>
         <property name="transactionAttributes">
