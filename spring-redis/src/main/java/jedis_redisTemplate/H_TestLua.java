@@ -31,6 +31,16 @@ public class H_TestLua {
 
         // 如果是简单的操作，使用原来的Jedis会简易些
         Jedis jedis = (Jedis) redisTemplate.getConnectionFactory().getConnection().getNativeConnection();
+
+        Object evalsha = jedis.eval("local c=redis.call('hmget','hash-question', tostring(643),tostring(693),tostring(1155),tostring(1059),tostring(1463)); return   c ;");
+        System.out.println(evalsha);
+
+
+        //先重set集合中随机选出5个id，然后根据这5个id，从hash中找到这5个值，最后把这5个值返回；
+        Object eval = jedis.eval("local b={};b=redis.call('srandmember',KEYS[1],ARGV[1]);local str=''; local objstr={}; for k,v in pairs(b)do  table.insert(objstr,''..v..'');end ;" +
+                "local cc=redis.call('hmget','hash-question', unpack(objstr));    return cc;", 1, "set-question", 5 + "");
+        System.out.println(eval);
+
         // 执行简单的脚本
         String helloLua = (String) jedis.eval("return 'hello lua'");
         System.out.println(helloLua);
