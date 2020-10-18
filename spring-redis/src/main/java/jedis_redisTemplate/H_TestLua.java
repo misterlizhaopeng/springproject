@@ -37,7 +37,12 @@ public class H_TestLua {
 
 
         //先重set集合中随机选出5个id，然后根据这5个id，从hash中找到这5个值，最后把这5个值返回；
-        Object eval = jedis.eval("local b={};b=redis.call('srandmember',KEYS[1],ARGV[1]);local str=''; local objstr={}; for k,v in pairs(b)do  table.insert(objstr,''..v..'');end ;" +
+        //redis-start
+        //eval "local x='h'; return x..'...bbb';" 0
+        //eval "local x=3;local y=4;return x+y;" 0
+        // eval "local b={};b=redis.call('srandmember',KEYS[1],ARGV[1]);local str=''; local obj={}; for k,v in pairs(b)do  table.insert(obj,''..v..'');end ;local cc=redis.call('hmget','hash-question', unpack(obj));    return cc;" 1 set-question 5
+        //redis-end
+        Object eval = jedis.eval("local b={};b=redis.call('srandmember',KEYS[1],ARGV[1]);local str=''; local objstr={}; for k,v in pairs(b) do  table.insert(objstr,''..v..'');end ;" +
                 "local cc=redis.call('hmget','hash-question', unpack(objstr));    return cc;", 1, "set-question", 5 + "");
         System.out.println(eval);
 

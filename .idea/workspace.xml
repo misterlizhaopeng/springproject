@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="763e6564-80d4-4ca9-a03a-9c2dc4c53fa4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/A_TestJedisPerformance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/H_TestLua.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/H_TestLua.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -100,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/H_TestLua.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+            <state relative-caret-position="236">
+              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,7 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>InstantiationAwareBeanPostProcessor</find>
       <find>addBeanPostProcessor</find>
       <find>BeanWrapperImpl</find>
       <find>instanceWrapper</find>
@@ -154,6 +152,7 @@
       <find>myRedisMessageListener</find>
       <find>myRedisMessageListener2</find>
       <find>redisTemplate</find>
+      <find>objstr</find>
     </findStrings>
     <replaceStrings>
       <replace>mybatis_spring_redis.bean</replace>
@@ -321,7 +320,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603022624386" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603022909542" />
     <property name="last_opened_file_path" value="S:/tuling/sanqi/四：分布式框架专题/10.Rabbitmq基本概念讲解 -司马/tulingvip-rabbitmq" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -558,7 +557,7 @@
       <workItem from="1602843108320" duration="2300000" />
       <workItem from="1602845502380" duration="10134000" />
       <workItem from="1603006239018" duration="828000" />
-      <workItem from="1603007484028" duration="11148000" />
+      <workItem from="1603007484028" duration="11433000" />
     </task>
     <task id="LOCAL-00001" summary="删除module spring-thread/design-pattern">
       <created>1587881955498</created>
@@ -798,7 +797,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603016201864</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="spring-reids -先重set集合中随机选出5个id，然后根据这5个id，从hash中找到这5个值，最后把这5个值返回">
+      <created>1603022649403</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1603022649404</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -834,7 +840,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="516052000" />
+    <option name="totallyTimeSpent" value="516337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
@@ -851,7 +857,7 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.2928" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.43882176" side_tool="true" weight="0.33968255" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" sideWeight="0.56117827" visible="true" weight="0.33650795" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.56117827" visible="true" weight="0.33650795" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -925,7 +931,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="redis-lua-update" />
     <MESSAGE value="redis-主从、读写分离(通过ip直接连接即可：暂时)、哨兵（JavaAPI、Spring）两种客户端方式访问redis" />
     <MESSAGE value="redis-spring的缓存机制和redis结合-准备阶段（spring注解方式配置访问mybatis；配置redis[方式的]缓存管理器RedisCacheManager对象，该接口实现了spring的CacheManager接口）" />
     <MESSAGE value="redis-spring的缓存机制和redis结合-测试阶段（@Cacheable（常用于查询）、@CachePut常用于（添加 删除）、@CacheEvict（常用于删除）、属性value key）" />
@@ -950,7 +955,8 @@
     <MESSAGE value="spring-reids 之订阅发布" />
     <MESSAGE value="spring-reids 之订阅发布-订阅多个channel" />
     <MESSAGE value="spring-reids 之订阅发布-订阅多个channel；&#10;redis的订阅发布的问题如下：&#10;无法保证发布的消息一定能被订阅者收到；&#10;重启之后， 在重启过程中的消息丢失；" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring-reids 之订阅发布-订阅多个channel；&#10;redis的订阅发布的问题如下：&#10;无法保证发布的消息一定能被订阅者收到；&#10;重启之后， 在重启过程中的消息丢失；" />
+    <MESSAGE value="spring-reids -先重set集合中随机选出5个id，然后根据这5个id，从hash中找到这5个值，最后把这5个值返回" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring-reids -先重set集合中随机选出5个id，然后根据这5个id，从hash中找到这5个值，最后把这5个值返回" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -987,7 +993,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/H_TestLua.java</url>
-          <line>44</line>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="103" />
         </line-breakpoint>
@@ -1467,8 +1473,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/H_TestLua.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+        <state relative-caret-position="236">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
