@@ -14,6 +14,7 @@ import java.util.List;
 
 public class D_Pipeline {
 
+    public static final Integer _PORT = 6379;
     /*
     JavaApi 测试 redis 管道技术的性能：
 
@@ -22,7 +23,7 @@ public class D_Pipeline {
 
     @Test
     public void testPipeline(){
-        Jedis jedis = new Jedis("192.168.25.140", 6380);
+        Jedis jedis = new Jedis("192.168.25.140", _PORT);
         jedis.auth("lp");//登录redis密码验证
         Pipeline pipelined = jedis.pipelined();//redis管道技术
         int i = 0;
@@ -80,7 +81,7 @@ public class D_Pipeline {
         poolCfg.setMaxWaitMillis(20000);
 
         // 使用配置创建连接池
-        JedisPool pool = new JedisPool(poolCfg, "192.168.25.140",6380);
+        JedisPool pool = new JedisPool(poolCfg, "192.168.25.140",_PORT);
         // 从连接池中获取单个连接
         Jedis jedis = pool.getResource();
         // 如果需密码

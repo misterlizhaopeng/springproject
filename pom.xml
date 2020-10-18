@@ -16,5 +16,6 @@
         <module>spring-redis</module>
         <module>spring-zookeeper</module>
         <module>spring-rabbitmq</module>
+        <module>spring-db</module>
     </modules>
 </project>

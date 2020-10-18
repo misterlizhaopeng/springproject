@@ -1,5 +1,6 @@
 package basic_type;
 
+import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
@@ -7,13 +8,23 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 import java.util.*;
 
 public class TestHash {
-    public static void main(String[] args) {
-        ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:redisTemplate.xml");
-        RedisTemplate redisTemplate = ctx.getBean(RedisTemplate.class);
 
 
 
+    ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:redisTemplate.xml");
+    RedisTemplate redisTemplate = ctx.getBean(RedisTemplate.class);
 
+
+    @Test
+    public void hmget(){
+        List list = redisTemplate.boundHashOps("hashKey").multiGet(Arrays.asList("f3","f1", "f2"));
+        System.out.println(list);
+    }
+
+
+
+    @Test
+    public   void test_01(){
 
         //hset article:20010280 id 20010290 title 这是一个比较不错的文章，关于redis性能调优的  createtime 1990808 update 158900987
         //hset article:20010270 id 20010290 title 这是一个比较不错的文章，关于redis性能调优的  createtime 1990808 update 158900987

@@ -4,14 +4,16 @@ import redis.clients.jedis.Jedis;
 
 public class A_TestJedisPerformance {
 
+    public static final Integer _PORT = 6379;
+
     /**
      * 测试一秒 jedis 添加数据的数量：只有上千次；
      *
      * @param args
      */
     public static void main(String[] args) {
-        Jedis jedis = new Jedis("192.168.25.140", 6380);
-        jedis.auth("lp");//登录redis密码验证
+        Jedis jedis = new Jedis("192.168.25.140", _PORT);
+        jedis.auth("lp");//登录 redis 密码验证
         int i = 0;
         try {
             long start = System.currentTimeMillis();

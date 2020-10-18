@@ -10,6 +10,9 @@ import org.aspectj.lang.annotation.*;
 
 
 /*
+
+【1.spring-aop实现】
+
 Java注解实现spring方式的aop
 
 顺延的技术点：
@@ -55,6 +58,14 @@ aop 相关概念：
     3.测试即可
 
 * */
+
+/**
+ 【2.@EnableAspectJAutoProxy原理】
+ 见AOPConfig配置类
+
+ */
+
+
 
 
 //1 定义切面

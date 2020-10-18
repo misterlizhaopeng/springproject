@@ -5,9 +5,14 @@ import aop.Ins.*;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MT {
     @Test
     public void testOneAspect() {
+
+
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AOPConfig.class);
 
 
@@ -25,7 +30,7 @@ public class MT {
             MyParamt pa = new MyParamt();
             pa.setId(100);
             pa.setName("1000");
-            animal.passPamaTest(pa,"22");
+            animal.passPamaTest(pa, "22");
         }
         //引入end
 

@@ -49,7 +49,7 @@ public class H_TestLua {
     }
 
     /*
-          通过spring提供的RedisScript接口（实现类DefaultRedisScript）对象执行lua脚本操作对象类型的数据；
+          通过spring提供的RedisScript接口（实现类DefaultRedisScript）对象执行lua 脚本操作对象类型的数据；
 
       */
     @Test

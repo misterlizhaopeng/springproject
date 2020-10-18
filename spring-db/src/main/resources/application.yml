@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev
+
+# 配置mybatis
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.liaijin.mysqltest.entity
+server:
+  port: 10326

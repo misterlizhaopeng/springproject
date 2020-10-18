@@ -9,7 +9,7 @@ public class TestConsumer {
 
         //创建一个连接工厂
         ConnectionFactory connectionFactory = new ConnectionFactory();
-        connectionFactory.setHost("192.168.25.140");
+        connectionFactory.setHost("192.168.25.142");
         connectionFactory.setPort(5672);
         connectionFactory.setVirtualHost("consu_definition");
         connectionFactory.setUsername("lisi");

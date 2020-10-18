@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lp.mysqltest.Dao.UserDao">
+    <resultMap id="BaseResultMap" type="com.lp.mysqltest.entity.User">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="gmt_create" property="gmtCreate" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <insert id="insertUser" parameterType="com.lp.mysqltest.entity.User">
+        insert into user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+
+            <if test="name != null">
+                name,
+            </if>
+            <if test="gmtCreate != null">
+                gmt_create,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="gmtCreate != null">
+                #{gmtCreate,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <delete id="deleteUser" parameterType="java.lang.Long">
+        delete from user where id=#{id}
+    </delete>
+    <update id="updateUser" parameterType="com.lp.mysqltest.entity.User">
+        update user
+        <set>
+            <if test="name != null">
+                name = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="gmtCreate != null">
+                gmt_create = #{gmtCreate,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+    <select id="selectUser" parameterType="com.lp.mysqltest.entity.User" resultMap="BaseResultMap">
+        select * from user
+    </select>
+    <select id="selectUserById" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select * from user where id = #{id}
+    </select>
+</mapper>
