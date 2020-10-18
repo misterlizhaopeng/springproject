@@ -41,9 +41,11 @@ public class H_TestLua {
         //eval "local x='h'; return x..'...bbb';" 0
         //eval "local x=3;local y=4;return x+y;" 0
         // eval "local b={};b=redis.call('srandmember',KEYS[1],ARGV[1]);local str=''; local obj={}; for k,v in pairs(b)do  table.insert(obj,''..v..'');end ;local cc=redis.call('hmget','hash-question', unpack(obj));    return cc;" 1 set-question 5
+
+        //eval "local b={};b=redis.call('srandmember',KEYS[1],ARGV[1]);local str=''; local obj={}; for k,v in pairs(b)do  table.insert(obj,''..v..'');end ;local cc=redis.call('hmget',KEYS[2], unpack(obj));    return cc;" 2 set-question  hash-question 3
         //redis-end
         Object eval = jedis.eval("local b={};b=redis.call('srandmember',KEYS[1],ARGV[1]);local str=''; local objstr={}; for k,v in pairs(b) do  table.insert(objstr,''..v..'');end ;" +
-                "local cc=redis.call('hmget','hash-question', unpack(objstr));    return cc;", 1, "set-question", 5 + "");
+                "local cc=redis.call('hmget',KEYS[2], unpack(objstr));    return cc;", 2, "set-question","hash-question", 3 + "");
         System.out.println(eval);
 
         // 执行简单的脚本

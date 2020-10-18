@@ -99,11 +99,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/H_TestLua.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+            <state relative-caret-position="210">
+              <caret line="47" column="128" selection-start-line="47" selection-start-column="128" selection-end-line="47" selection-end-column="128" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Jedis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="2666" column="16" selection-start-line="2666" selection-start-column="16" selection-end-line="2666" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -320,7 +329,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603022909542" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603023491340" />
     <property name="last_opened_file_path" value="S:/tuling/sanqi/四：分布式框架专题/10.Rabbitmq基本概念讲解 -司马/tulingvip-rabbitmq" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -557,7 +566,7 @@
       <workItem from="1602843108320" duration="2300000" />
       <workItem from="1602845502380" duration="10134000" />
       <workItem from="1603006239018" duration="828000" />
-      <workItem from="1603007484028" duration="11433000" />
+      <workItem from="1603007484028" duration="11823000" />
     </task>
     <task id="LOCAL-00001" summary="删除module spring-thread/design-pattern">
       <created>1587881955498</created>
@@ -804,19 +813,17 @@
       <option name="project" value="LOCAL" />
       <updated>1603022649404</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="spring-reids -先重set集合中随机选出5个id，然后根据这5个id，从hash中找到这5个值，最后把这5个值返回">
+      <created>1603022928040</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1603022928040</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="E_SubscribePublish_subscribeChannel - 2020.10.18 at 18h 14m 51s.xml">
-      <configuration name="E_SubscribePublish.subscribeChannel" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="H_TestLua_testLuaScript - 2020.10.18 at 19h 49m 32s.xml">
-      <configuration name="H_TestLua.testLuaScript" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="H_TestLua_testLuaScript - 2020.10.18 at 19h 50m 09s.xml">
-      <configuration name="H_TestLua.testLuaScript" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="H_TestLua_testLuaScript - 2020.10.18 at 19h 50m 49s.xml">
       <configuration name="H_TestLua.testLuaScript" configurationId="JUnit" />
     </history-entry>
@@ -838,9 +845,18 @@
     <history-entry file="H_TestLua_testLuaScript - 2020.10.18 at 20h 02m 02s.xml">
       <configuration name="H_TestLua.testLuaScript" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="H_TestLua_testLuaScript - 2020.10.18 at 20h 13m 44s.xml">
+      <configuration name="H_TestLua.testLuaScript" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="H_TestLua_testLuaScript - 2020.10.18 at 20h 14m 05s.xml">
+      <configuration name="H_TestLua.testLuaScript" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="H_TestLua_testLuaScript - 2020.10.18 at 20h 14m 38s.xml">
+      <configuration name="H_TestLua.testLuaScript" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="516337000" />
+    <option name="totallyTimeSpent" value="516727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
@@ -857,7 +873,7 @@
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.2928" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.43882176" side_tool="true" weight="0.33968255" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.56117827" visible="true" weight="0.33650795" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" sideWeight="0.56117827" visible="true" weight="0.44603175" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -993,7 +1009,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/H_TestLua.java</url>
-          <line>49</line>
+          <line>51</line>
           <properties />
           <option name="timeStamp" value="103" />
         </line-breakpoint>
@@ -1066,16 +1082,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-aop/src/main/java/aop/aspect/Aspect01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="949">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-aop/src/main/java/aop/test/AOPConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -1471,10 +1477,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Jedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="2666" column="16" selection-start-line="2666" selection-start-column="16" selection-end-line="2666" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-redis/src/main/java/jedis_redisTemplate/H_TestLua.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        <state relative-caret-position="210">
+          <caret line="47" column="128" selection-start-line="47" selection-start-column="128" selection-end-line="47" selection-end-column="128" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
