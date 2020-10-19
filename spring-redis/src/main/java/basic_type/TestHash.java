@@ -2,6 +2,7 @@ package basic_type;
 
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.data.redis.core.BoundHashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
@@ -13,6 +14,16 @@ public class TestHash {
 
     ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:redisTemplate.xml");
     RedisTemplate redisTemplate = ctx.getBean(RedisTemplate.class);
+
+
+    @Test
+    public void testGet(){
+        BoundHashOperations boundHashOperations = redisTemplate.boundHashOps("hash-question");
+        Map map = boundHashOperations.entries();
+        System.out.println(map);
+
+    }
+
 
 
     @Test
