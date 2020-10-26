@@ -8,6 +8,11 @@ public class AppConfig {
 	public Cat cat() {
 		return new Cat();
 	}
+
+	@Bean
+	public BigDog bigDog() {
+		return new BigDog();
+	}
 	
 //	@Bean
 //	public Cat cat02() {

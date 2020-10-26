@@ -1,6 +1,7 @@
 package x.b.n;
 
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -81,18 +82,22 @@ public class MT {
 		AnnotationConfigApplicationContext c = new AnnotationConfigApplicationContext(AppConfig.class);
 		Cat cat = c.getBean(Cat.class);
 
-		String[] s = c.getBeanDefinitionNames();
+		//x.b.n
+
+	/*	String[] s = c.getBeanDefinitionNames();
 		List<String> list = Arrays.asList(s);
 		list.forEach(a -> {
 			System.out.println(a);
 		});
-		
+
 		System.out.println("---------->");
 		Cat c1 = c.getBean("cat",Cat.class);
 		Cat c2 = c.getBean("cat02",Cat.class);
 		System.out.println(c1);
 		System.out.println(c2);
 		System.out.println("---------->");
+
+		*/
 		
 		
 	}
