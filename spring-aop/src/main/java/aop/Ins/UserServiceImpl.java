@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 public class UserServiceImpl implements UserService {
     @Override
     public void testMethodOne(String id) {
-//       int a= 1/0;
+      // int a= 1/0;
         System.out.println("proxy-method-测试连接点，传入的id："+id);
     }
 

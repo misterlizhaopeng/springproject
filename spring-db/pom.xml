@@ -22,15 +22,18 @@
             <version>2.1.4.RELEASE</version>
         </dependency>
 
-        <dependency>
+   <!--   <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
-
-        <dependency>
+            <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
+        </dependency>-->
+
+
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -40,6 +43,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
         </dependency>
 
         <!--通用mapper依赖-->
@@ -56,12 +60,12 @@
             <version>2.9.2</version>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
             <version>5.2.8.RELEASE</version>
             <scope>compile</scope>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -74,12 +78,12 @@
             <version>1.9.6</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
+       <!-- <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>5.2.8.RELEASE</version>
             <scope>compile</scope>
-        </dependency>
+        </dependency>-->
 
 
     </dependencies>

@@ -29,14 +29,14 @@ aop 相关概念：
     切面：当前类就是一个切面，类似于一个拦截器
     通知：切面中的方法，有5种通知：1前置通知 2后置通知 3后置返回通知 4后置异常通知 5环绕通知
     [连接点]：[被切的方法]
-    切点：@Pointcut("execution(* aop.Ins.*.*(..))")中的字符串为切入点表达式，表示当前切面要拦截的目标
+    切点：@Pointcut("execution(* aop.Ins.*.*(..))") 中的字符串为切入点表达式，表示当前切面要拦截的目标
     织入：生成代理对象，把切面内容放入到流程中，这里可以考虑一下jdk动态代理的bind和invoke两步方法；
     引入：为指定的类增加类和方法，增强指定 bean 的功能（分两步可以对一个对象进行引入别的接口，如下所示）
 
 
 实现spring的aop的步骤：
     1.定义连接点（真实对象的执行方法）
-    2.定义切面（@AspectJ标注）
+    2.定义切面（ @AspectJ 标注）
     3.在spring容器的上@EnableAspectJAutoProxy，表示启动 spring 的aop的意思，并且实例化切面的 bean
     最后，获取spring容器，拿到真实对象并执行被切面切到的方法（连接点）查看执行顺序
 
@@ -60,7 +60,7 @@ aop 相关概念：
 * */
 
 /**
- 【2.@EnableAspectJAutoProxy原理】
+ 【2.@EnableAspectJAutoProxy 原理】
  见AOPConfig配置类
 
  */

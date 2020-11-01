@@ -43,7 +43,7 @@ public class AOPConfig {
 
     //3.创建一个切面实例
     @Bean
-    public Aspect01 getAspect01(){
+    public Aspect01 getAspect01_go(){
         return new Aspect01();
     }
 
