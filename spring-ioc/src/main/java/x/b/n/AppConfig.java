@@ -22,17 +22,20 @@ public class AppConfig {
     }
 
 
-    @Bean
+    //@Bean
     public SmartLifeCycleTst smartLifeCycleTst() {
         return new SmartLifeCycleTst();
     }
-
-    @Bean
+    //@Bean
     public DefaultLifecycleProcessor defaultLifecycleProcessor(){
         DefaultLifecycleProcessor defaultLifecycleProcessor = new DefaultLifecycleProcessor();
         defaultLifecycleProcessor.setTimeoutPerShutdownPhase(10000);
         return defaultLifecycleProcessor;
     }
+
+
+
+
 
 //	@Bean
 //	public Cat cat02() {
